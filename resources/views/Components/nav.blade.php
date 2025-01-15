@@ -1,1 +1,1 @@
-<a href={{$slot}}>{{$slot}}</a>
+<a class=" hover:underline" href="/{{$slot}}">{{$slot}}</a>
