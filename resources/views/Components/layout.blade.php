@@ -9,6 +9,7 @@
 </head>
 <body class="p-4 bg-green-300 font-black">
     <nav>
+        <x-nav>"/"</x-nav>
         <a class=" hover:underline" href="/">Home</a>
         <a class=" hover:underline" href="/about">About</a>
         <a class=" hover:underline" href="/pirate">Pirate</a>
