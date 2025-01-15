@@ -10,8 +10,9 @@
 <body class="p-4 bg-green-300 font-black">
     <nav>
         <a class=" hover:underline" href="/">Home</a>
-        <a class=" hover:underline" href="/about">About</a>
-        <a class=" hover:underline" href="/pirate">Pirate</a>
+        <x-nav></x-nav>
+        <x-nav>about</x-nav>
+        <x-nav>pirate</x-nav>
     </nav>
     {{$slot}}
 </body>
