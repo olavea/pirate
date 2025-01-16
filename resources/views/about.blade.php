@@ -1,3 +1,3 @@
 <x-layout>
-    <x-slot:heading>💀</x-slot:heading>
+    <x-slot:heading>Pirate 💀</x-slot:heading>
 </x-layout>

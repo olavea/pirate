@@ -1,8 +1,8 @@
 <x-layout>
     <x-slot:heading>
-    <div class="flex text-white">
-        <img class="size-16" src="https://img.icons8.com/?size=120&id=K18A1WRGEfQO&format=png" alt="Your Loot"><p class="invisible">yo yo yo yo</p> Upload
-    </div>    
+    
+         Upload Loot 💰
+    
     </x-slot:heading>
     <h1 class="mb-2 text-purple-900 font-black text-6xl font-black">ARR! </h1>
     <h1 class="mb-2 text-purple-900 font-black text-7xl font-black">Pirate </h1>
