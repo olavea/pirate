@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full" lang="en">
+<html class="h-full bg-emerald-400" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" 
@@ -27,9 +27,10 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="rounded-md drop-shadow-lg bg-gradient-to-b shadow from-orange-500 to-yellow-300 px-3 py-2 font-black text-white" aria-current="page">Upload</a>
-              <x-nav href="/about" class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Pirate</x-nav>
-              <x-nav href="/pirate" class="rounded-md px-3 py-2 text-sm font-medium text-gray-900 hover:bg-gray-700 hover:text-white">Tales   </x-nav>
+              <x-nav-link href="/" :active="request()->is('/')">Home</x-nav-link>
+              <x-nav-link href="/about" :active="request()->is('about')">about</x-nav-link>
+              <x-nav-link href="/pirate" :active="request()->is('pirate')">pirate</x-nav-link>
+              
             </div>
           </div>
         </div>
