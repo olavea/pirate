@@ -1,1 +1,3 @@
-<x-layout>abo</x-layout>
+<x-layout>
+    <x-slot:heading>Pirate 💀</x-slot:heading>
+</x-layout>
