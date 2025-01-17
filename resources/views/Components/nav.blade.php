@@ -1,1 +1,0 @@
-<a class=" hover:underline font-black" {{ $attributes }}>{{ $slot }}</a>
