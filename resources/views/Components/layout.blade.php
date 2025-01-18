@@ -21,7 +21,7 @@
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
-          <div class="shrink-2 ">
+          <div class="shrink-1 ">
             <img class="size-96 drop-shadow-lg" src="https://ouch-cdn2.icons8.com/5iRXIex6ENAJfhSm6GxYntqBKoM2lSzRffmJl3YSyws/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTEz/L2ExMTRiYjEzLWUz/ZjktNGVlZS1hMTcy/LTgzYmM4OWE5MDQ1/YS5wbmc.png" alt="Yellow skull">
           </div>
           <div class="hidden md:block">
@@ -65,7 +65,7 @@
       </div>
       <div class="border-t border-orange-500 pb-3 pt-4">
         <div class="flex items-center px-5">
-          <div class="shrink-0">
+          <div class="shrink-1">
             <img class="size-16 rounded-full" src="https://img.icons8.com/?size=128&id=faGuEfKHrWow&format=png" alt="">
           </div>
           <div class="ml-3">
