@@ -18,8 +18,8 @@ Route::get('/no', function () {
     return 'no';
 });
 
-Route::get('/pirate', function () {
-    return view('pirate');
+Route::get('/upload', function () {
+    return view('upload');
 });
 
 Route::get('/bleh', function () {

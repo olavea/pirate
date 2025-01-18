@@ -29,7 +29,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <x-nav href="/" :active="request()->is('/')">Tales</x-nav>
               
-              <x-nav href="/pirate" :active="request()->is('pirate')">Upload</x-nav>
+              <x-nav href="/upload" :active="request()->is('upload')">Upload</x-nav>
               
             </div>
           </div>
@@ -60,7 +60,7 @@
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <x-mob-link  href="/" :active="request()->is('/')">Tales</x-mob-link>
         
-        <x-mob-link  href="/pirate" :active="request()->is('pirate')">Upload</x-mob-link>
+        <x-mob-link  href="/upload" :active="request()->is('upload')">Upload</x-mob-link>
        
       </div>
       <div class="border-t border-orange-500 pb-3 pt-4">
