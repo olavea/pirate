@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:heading>
         
-         Upload Loot 💰
+        💰 Upload Loot 
     
     </x-slot:heading>
     <h1 class="mb-2 text-purple-900 font-black text-6xl font-black">ARR! </h1>
