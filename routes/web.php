@@ -1,10 +1,15 @@
 <?php
 
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home', [
-        'tales' => [
+    return view('home');
+});
+
+Route::get('/jobs', function () {
+    return view('jobs', [
+        'jobs' => [
             [
                 'id' => 1,
                 'title' => 'Cap',
@@ -22,7 +27,31 @@ Route::get('/', function () {
             ]
         ]
     ]);
+});
 
+Route::get('/jobs/{id}', function ($id) {
+    $jobs = [
+        
+            [
+                'id' => 1,
+                'title' => 'Cap',
+                'salary' => '$50,000'  
+            ],
+            [
+                'id' => 2,
+                'title' => 'Prog',
+                'salary' => '$10,000'  
+            ],
+            [
+                'id' => 3,
+                'title' => 'FirstMate',
+                'salary' => '$40,000'  
+            ]
+        
+    ];
+    $job = Arr::first($jobs, fn($job) => $job['id'] == $id );
+    
+    return view('job', ['job' => $job]);
 });
 
 Route::get('/upload', function () {
@@ -30,7 +59,3 @@ Route::get('/upload', function () {
 });
 
 
-Route::get('/tales/{id}', function ($id) {
-    dd($id);
-    return view('upload');
-});
