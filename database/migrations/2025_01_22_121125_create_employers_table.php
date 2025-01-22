@@ -11,12 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //tall Tales
-        Schema::create('tales', function (Blueprint $table) {
+        Schema::create('employers', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\App\Models\Employer::class);
-            $table->string('title');
-            $table->longText('payloadtext');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -26,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        Schema::dropIfExists('employers');
     }
 };
