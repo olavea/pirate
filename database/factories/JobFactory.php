@@ -18,8 +18,7 @@ class JobFactory extends Factory
     {
         return [
             'title' => fake()->jobTitle(),
-            'employer_id' => Employer::factory(), 
-            'payloadtext' => 'BleBleh-BleBleh-BleBleh-BleBleh-b'
+            'salary' => 'BleBleh-BleBleh-BleBleh-BleBleh-b'
         ];
     }
 }

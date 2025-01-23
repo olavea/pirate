@@ -14,9 +14,9 @@ return new class extends Migration
         //tall Tales
         Schema::create('tales', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(\App\Models\Employer::class);
+            
             $table->string('title');
-            $table->longText('payloadtext');
+            $table->longText('salary');
             $table->timestamps();
         });
     }
