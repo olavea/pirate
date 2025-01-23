@@ -5,9 +5,10 @@
     
   </x-slot:heading>
   <h1 class="mb-2 text-purple-900 font-black text-6xl font-black">ARR! </h1>
-    <h1 class="mb-2 text-purple-900 font-black text-7xl font-black">Pirate </h1>
+    <h1 class="mb-2 text-purple-900 font-black text-8xl font-black">Pirate </h1>
     <h1 class="mb-2 text-8xl font-black">👋🥳🏴‍☠️</h1>
-    <h2 class="mb-2 ">Upload Your Loot</h2>
+    <h2 class="mb-2 text-purple-900 font-black text-3xl font-black">Upload Your Loot 💰</h2>
+    <p class="mb-2 text-purple-900"> P.S. these buttons are not active yet</p>
     <button type="button" class="rounded-md drop-shadow-lg bg-yellow-400 px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-400">Add Loot File 📥</button>
     <br />
     <br />
