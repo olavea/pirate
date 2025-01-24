@@ -6,7 +6,7 @@
         content="width=device-width, initial-scale=1">
         @vite('resources/css/app.css')
     <title>pirate uploads</title>
-    @vite(['resources/js/app.js'])
+    @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body class="h-full p-4 bg-emerald-400 font-black">
 <!--
