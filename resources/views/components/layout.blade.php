@@ -6,6 +6,8 @@
         content="width=device-width, initial-scale=1">
         @vite('resources/css/app.css')
     <title>pirate uploads</title>
+    <link rel="icon" href="favicon.svg">
+    
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
 <body class="h-full p-4 bg-emerald-400 font-black">
@@ -23,7 +25,7 @@
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           <div class="shrink-1 ">
-            <img class="size-96 drop-shadow-lg" src="https://ouch-cdn2.icons8.com/5iRXIex6ENAJfhSm6GxYntqBKoM2lSzRffmJl3YSyws/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTEz/L2ExMTRiYjEzLWUz/ZjktNGVlZS1hMTcy/LTgzYmM4OWE5MDQ1/YS5wbmc.png" alt="Yellow skull">
+            <img class="size-96 drop-shadow-lg" src="https://ouch-cdn2.icons8.com/5iRXIex6ENAJfhSm6GxYntqBKoM2lSzRffmJl3YSyws/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTEz/L2ExMTRiYjEzLWUz/ZjktNGVlZS1hMTcy/LTgzYmM4OWE5MDQ1/YS5wbmc.png" alt="Loot">
           </div>
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
