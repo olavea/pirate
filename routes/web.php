@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\JobController;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
@@ -95,4 +96,4 @@ Route::get('/upload', function () {
     return view('upload');
 });
 
-
+Route::resource('jobs', JobController::class);
