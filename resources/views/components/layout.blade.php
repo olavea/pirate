@@ -34,6 +34,7 @@
               
               <x-nav href="/upload" :active="request()->is('upload')">Upload</x-nav>
               
+              <x-nav href="/register">register</x-nav >
             </div>
           </div>
         </div>
@@ -44,9 +45,9 @@
             <div class="relative ml-3">
               <div>
                 <button type="button" class="drop-shadow-lg relative flex max-w-xs items-center rounded-full bg-yellow-300 text-sm focus:outline-none focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2 focus:ring-offset-orange-500" id="user-menu-button" aria-expanded="false" aria-haspopup="true">
-                  <span class="absolute -inset-1.5"></span>
-                  <span class="sr-only">Open user menu</span>
-                  <img class="size-14 rounded-full" src="https://img.icons8.com/?size=128&id=faGuEfKHrWow&format=png" alt="">
+                  
+                  <x-nav href="/register">register</x-nav >
+                  <img class="size-14 rounded-full" src="https://img.icons8.com/?size=128&id=faGuEfKHrWow&format=png" alt="skull">
                 </button>
               </div>
 
@@ -65,6 +66,14 @@
         
         <x-mob-link  href="/upload" :active="request()->is('upload')">Upload</x-mob-link>
        
+        @auth
+          <form method="POST" action="/logout">
+            @csrf
+
+            <x-form-button>log out</x-form-button>
+          </form> 
+
+        @endauth
       </div>
       <div class="border-t border-orange-500 pb-3 pt-4">
         <div class="flex items-center px-5">
@@ -83,7 +92,9 @@
 
   <header class="rounded-b-2xl bg-gradient-to-b from-yellow-300 to-orange-400 shadow">
     <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-5xl px-2 py-2 rounded-2xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white">{{ $heading }}</h1>
+      <h1 class="text-6xl px-2 py-2 rounded-2xl bg-gradient-to-b from-yellow-200 to-yellow-500 text-right font-bold tracking-tight text-white">
+        {{ $heading }}
+      </h1>
     </div>
   </header>
   <main>

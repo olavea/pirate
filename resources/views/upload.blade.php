@@ -1,7 +1,32 @@
 <x-layout>
   <x-slot:heading>
-  
-    💰 Upload Loot 
+             
+  <span
+        class="font-black text-transparent
+            bg-clip-text bg-gradient-to-r
+            from-pink-300 to-orange-600
+            dark:from-pink-400 dark:to-orange-600"
+        >
+          Up 
+        </span> 
+        <span
+        class="font-black text-transparent
+            bg-clip-text bg-gradient-to-r
+            from-yellow-400 to-green-500 text-8xl
+            dark:from-yellow-400 dark:to-green-500"
+        >
+          load
+        </span>
+        <span
+        class="font-black text-transparent
+            bg-clip-text bg-gradient-to-r
+            from-blue-300 to-purple-600
+            dark:from-blue-400 dark:to-purple-500"
+        >
+          Loot 
+        </span>
+    
+    
     
   </x-slot:heading>
   <h1 class="mb-2 text-purple-900 font-black text-6xl font-black">ARR! </h1>

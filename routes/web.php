@@ -2,9 +2,17 @@
 
 use App\Http\Controllers\JobController;
 use Illuminate\Support\Arr;
+use App\Http\Controllers\RegisteredUserController;
 use Illuminate\Support\Facades\Route;
-use App\Models\Job;
+use App\Models\Job; 
 
+
+// Auth
+Route::get('/register', [RegisteredUserController::class, 'create']);
+Route::post('/register', [RegisteredUserController::class, 'store']);
+
+Route::get('/login', [SessionController::class, 'create']);
+Route::post('/login', [SessionController::class, 'store']);
 
 
 
