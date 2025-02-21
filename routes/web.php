@@ -4,9 +4,6 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 
-
-
-
 Route::get('/', function () {
     return view('home', [
         'jobs' => [
@@ -45,11 +42,28 @@ Route::get('/', function () {
     ]);
 });
 
+
+
 Route::get('/jobs', function () {
-    return view('jobs', [
+    // $jobs = Job::with('employer')->simplePaginate(3);
+
+    return view('jobs.index', [
         'jobs' => Job::all()
            
     ]);
+});
+
+Route::get('/jobs/create', function () {
+    return view('jobs.create');
+});
+
+Route::post('/jobs', function () {
+    // skip validation dd(request()->all());
+    Job::create([
+        'title' => request('title'),
+        'salary' => request('salary'),
+    ]);
+    return redirect('/jobs');
 });
 
 Route::get('/jobs/{id}', function ($id) {
@@ -88,7 +102,7 @@ Route::get('/jobs/{id}', function ($id) {
     $job = Arr::first($jobs, fn($job) => $job['id'] == $id);
 
     
-    return view('job', ['job' => $job]);
+    return view('jobs.show', ['job' => $job]);
 });
 
 Route::get('/upload', function () {
