@@ -83,7 +83,7 @@
 
   <header class="rounded-b-2xl bg-gradient-to-b from-yellow-300 to-orange-400 shadow">
     <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 lg:px-8">
-      <h1 class="text-5xl px-2 py-2 rounded-2xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white">{{ $heading }}</h1>
+      <h1 class="text-5xl px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600">{{ $heading }}</h1>
     </div>
   </header>
   <main>
