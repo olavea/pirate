@@ -54,6 +54,11 @@ Route::get('/jobs', function () {
 });
 
 Route::get('/jobs/create', function () {
+    
+    request()->validate([
+        'title' => ['required']
+    ]);
+
     return view('jobs.create');
 });
 

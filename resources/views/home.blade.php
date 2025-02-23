@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-        ⛵ Tall Tales
+        ⛵⛵⛵⛵⛵⛵⛵⛵ Tall Tales
         
     
     </x-slot:heading>
