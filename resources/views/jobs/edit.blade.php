@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-    ⛵⛵⛵⛵⛵⛵⛵⛵Edit Your Tale: {{ $job['title']}}
+    ⛵Edit Your Tale: {{ $job['title']}}
     </x-slot:heading>
     <!-- 15:43 @csrf  -->
     <form method="POST" action="/jobs{{ $job['id'] }}">
