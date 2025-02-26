@@ -3,8 +3,9 @@
     ⛵Edit Your Tale: {{ $job['title']}}
     </x-slot:heading>
     <!-- 15:43 @csrf  -->
-    <form method="POST" action="/jobs{{ $job['id'] }}">
-    @csrf 
+    <form method="POST" action="/jobs/{{ $job['id'] }}">
+        @csrf 
+        @method('PATCH')
 
     <div class="space-y-12">
         <div class="border-b border-gray-900/10 pb-12">
@@ -54,17 +55,29 @@
 
 
 
-    <div class="mt-6 flex items-center justify-end gap-x-6">
-        <a href="/jobs/{{ $job['id'] }}" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
-        <button 
-            href="/jobs/{{ $job['id'] }}"
-            type="submit" 
-            class="rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 px-3 py-2 text-5xl font-bold text-white shadow-sm hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-        >
-            Update
-        </button>
+    <div class="mt-6 flex items-center justify-between gap-x-6">
+        <div class="flex items-center gap-x-6">
+            <div>
+                <button form="delete-form" class="text-red-600 font-bold" href="">Delete</button>
+            </div>
+        </div>
+        <div class="flex items-center gap-x-6">
+            <a href="/jobs/{{ $job['id'] }}" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
+            <div>
+                <button 
+                    href="/jobs/{{ $job['id'] }}"
+                    type="submit" 
+                    class="rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 px-3 py-2 text-5xl font-bold text-white shadow-sm hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >
+                    Update
+                </button>
+            </div>
+        </div>    
     </div>
     </form>
-
+    <form method="POST" action="/jobs/{{ $job['id'] }}" class="hidden" id="delete-form">
+        @csrf 
+        @method('DELETE')
+    </form>
 
 </x-layout>
