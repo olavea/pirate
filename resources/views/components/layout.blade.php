@@ -27,7 +27,7 @@
           <div class="shrink-1 ">
             <img class="size-96 drop-shadow-lg" src="https://ouch-cdn2.icons8.com/5iRXIex6ENAJfhSm6GxYntqBKoM2lSzRffmJl3YSyws/rs:fit:368:368/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvNTEz/L2ExMTRiYjEzLWUz/ZjktNGVlZS1hMTcy/LTgzYmM4OWE5MDQ1/YS5wbmc.png" alt="Loot">
           </div>
-          <div class="hidden md:block">
+          <div class=" md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <x-nav href="/" :active="request()->is('/')">Tales</x-nav>
@@ -58,10 +58,10 @@
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="md:hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pb-3 pt-2 right sm:px-3">
+    <!-- <div class="md:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2 right sm:px-3"> -->
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <x-mob-link  href="/" :active="request()->is('/')">Tales</x-mob-link>
+        <!-- <x-mob-link  href="/" :active="request()->is('/')">Tales</x-mob-link>
         
         <x-mob-link  href="/jobs/create" :active="request()->is('jobs/create')">Your Tale</x-mob-link>
        
@@ -78,14 +78,28 @@
         </div>
         
       </div>
-    </div>
+    </div> -->
   </nav>
 
   <header class="rounded-b-2xl bg-gradient-to-b from-yellow-300 to-orange-400 shadow">
-    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 sm:flex sm:justify-between  lg:px-8">
-      <h1 class="text-5xl px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600">{{ $heading }}</h1>
+    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">
+      <div>
+        <x-button 
+          class="text-xl sm:text-xl md:text-3xl lg:text-5xl  px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600" 
+          href="/jobs/create"
+        >
+          Add a Tale
+        </x-button>
+      </div>  
+      <h1 
+        class="text-xl sm:text-xl md:text-3xl lg:text-5xl  px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-300 hover:to-orange-600"
+      >
+        {{ $heading }}
+      </h1>
 
-      <x-button href="/jobs/create">Add a Tale</x-button>
+      
+
+
     </div>
   </header>
   <main>

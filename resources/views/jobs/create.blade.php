@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot:heading>
-    ⛵⛵⛵⛵⛵⛵⛵⛵Tell Your Tale
+    ⛵Tell Your Tale
     </x-slot:heading>
     <!-- 15:43 @csrf  -->
     <form method="POST" action="/jobs">
