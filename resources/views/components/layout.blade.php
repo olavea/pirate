@@ -10,7 +10,7 @@
     
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="h-full p-4 bg-emerald-400 font-black">
+<body class="h-full p-4 bg-gradient-to-b from-emerald-800 to-emerald-500 dark:bg-gradient-to-b dark:from-emerald-800 dark:to-emerald-500 font-black">
 <!--
   This example requires updating your template:
 
@@ -20,7 +20,7 @@
   ```
 -->
 <div class="min-h-full">
-  <nav class="rounded-t-2xl bg-gradient-to-b from-orange-400 to-yellow-300">
+  <nav class="rounded-t-2xl bg-gradient-to-b from-purple-800 to-blue-500 dark:bg-gradient-to-b dark:from-purple-800 dark:to-blue-500">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
@@ -81,7 +81,7 @@
     </div> -->
   </nav>
 
-  <header class="rounded-b-2xl bg-gradient-to-b from-yellow-300 to-orange-400 shadow">
+  <header class="rounded-b-2xl bg-gradient-to-b from-red-600 to-yellow-400 dark:bg-gradient-to-b dark:from-red-600 dark:to-yellow-400 shadow">
     <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">
       <div>
         <x-button 
