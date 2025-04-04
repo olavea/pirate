@@ -10,7 +10,7 @@
     
     @vite(['resources/js/app.js', 'resources/css/app.css'])
 </head>
-<body class="h-full p-4 bg-gradient-to-b from-emerald-800 to-emerald-500 dark:bg-gradient-to-b dark:from-emerald-800 dark:to-emerald-500 font-black">
+<body class="h-full p-4 bg-gradient-to-b from-pink-400 via-orange-400 to-yellow-400 dark:bg-gradient-to-b dark:from-emerald-800 dark:to-emerald-500 font-black">
 <!--
   This example requires updating your template:
 
@@ -81,7 +81,7 @@
     </div> -->
   </nav>
 
-  <header class="rounded-b-2xl bg-gradient-to-b from-red-600 to-yellow-400 dark:bg-gradient-to-b dark:from-red-600 dark:to-yellow-400 shadow">
+  <header class="rounded-b-2xl bg-gradient-to-b from-red-600 via-orange-400 to-yellow-400 dark:bg-gradient-to-b dark:from-red-600 dark:to-yellow-400 shadow">
     <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">
       <div>
         <x-button 
