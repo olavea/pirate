@@ -8,7 +8,7 @@
     <p>Ring politiet</p>
 
 <!-- Theft form at ..../thefts/create  -->
-<form method="POST" action="/thefts/{{ $theft->id }}">
+<form method="POST" action="/thefts">
     @csrf
 
     <div>
@@ -50,7 +50,7 @@
     <div>
         <button type="submit">Start</button>
         <br />
-        <!-- <a href="/thefts/{{ $theft->id }}">Hopp over</a> -->
+        
     </div>
     
 </form>

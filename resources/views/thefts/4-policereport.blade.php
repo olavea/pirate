@@ -13,7 +13,7 @@ og som kunde har du info om tyveriet.</p>
 
 
 
-<form method="POST" action="/thefts/{{ $theft->id }}/4-policereport">
+<form method="POST" action="/thefts/4-policereport">
     @csrf
     @method('PATCH')
         <div>

@@ -6,7 +6,7 @@
 
 
 <!-- Theft form at http://whee-laravel.test/thefts/{id}/edit  -->
-<form method="POST" action="/thefts/{{ $theft->id }}/edit" enctype="multipart/form-data">
+<form method="POST" action="/thefts/edit" enctype="multipart/form-data">
     @method("PATCH")
     @csrf
     
@@ -31,7 +31,7 @@
         <button type="submit">Ok, gå videre</button>
         <br />
         <br />
-        <a href="/thefts/{{ $theft->id }}/2-find">Hopp over</a>
+        <a href="/thefts/2-find">Hopp over</a>
     </div>
     
 

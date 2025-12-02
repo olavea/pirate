@@ -6,9 +6,9 @@
 
 <p>Velg Whee! - ditt navn</p>
 
-<a href="/thefts/{{ $theft->id }}/edit">Tilbake</a>
+<a href="/thefts/edit">Tilbake</a>
 <!-- Theft form at http://whee-laravel.test/thefts/{id}/2-find  -->
-<form method="POST" action="/thefts/{{ $theft->id }}/2-find" enctype="multipart/form-data">
+<form method="POST" action="/thefts/2-find" enctype="multipart/form-data">
     @method('PATCH')
     @csrf
     
@@ -36,7 +36,7 @@
         <br />
         
         <br />
-        <a href="/thefts/{{ $theft->id }}/2-find-not">Det går ikke</a>
+        <a href="/thefts/2-find-not">Det går ikke</a>
         <!-- <div>
             <label for="find_my_not_working">find_my_not_working </label>
             <br />

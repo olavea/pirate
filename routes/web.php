@@ -9,196 +9,204 @@ Route::get('/', function () {
 });
 
 // Create
-Route::get('/jobs/create', function () {
+// Route::get('/jobs/create', function () {
     
-    // request()->validate([
-    //     'title' => ['required', 'min:3'],
-    //     'salary' => ['required'],
-    // ]);
+//     // request()->validate([
+//     //     'title' => ['required', 'min:3'],
+//     //     'salary' => ['required'],
+//     // ]);
 
-    return view('jobs.create');
-});
+//     return view('jobs.create');
+// });
 
-Route::post('/jobs', function () 
-{
-    Job::create([
-        'title' => request('title'),
-        'salary' => request('salary'),
-    ]);
+// Route::post('/jobs', function () 
+// {
+//     // Job::create([
+//     //     'title' => request('title'),
+//     //     'salary' => request('salary'),
+//     // ]);
 
-    return redirect('/jobs');
-});
+//     return redirect('/jobs');
+// });
 
-Route::get('/thefts', function () {
-    return view('thefts.index', [
-        'jobs' => Job::all()
+// Route::get('/thefts', function () {
+//     return view('thefts.index', [
+//         'jobs' => Job::all()
            
-    ]);
-});
+//     ]);
+// });
 
 Route::get('/thefts/create', function () 
 {
-    return view('thefts.create', ['theft' => new Job]);
+    return view('thefts.create');
 });
 
 Route::post('/thefts', function () 
 {
     // validate
     // authorize
-    $theft = Job::create([
-        'title' => request('title'),
-        'salary' => request('salary'),
-    ]);
-    return redirect('/thefts/'.$theft->id.'/edit');
+    // $theft = Job::create([
+    //     'title' => request('title'),
+    //     'salary' => request('salary'),
+    // ]);
+    return redirect('/thefts/edit');
 });
 
-Route::get('/thefts/{id}', function ($id) {
-    $jobs = Job::findOrFail($id);
+// Route::get('/thefts/{id}', function ($id) {
+//     $jobs = Job::findOrFail($id);
     
-    return view('thefts.show', ['job' => $jobs]);
-});
+//     return view('thefts.show', ['job' => $jobs]);
+// });
 
-Route::get('/thefts/{id}/edit', function ($id) 
+Route::get('/thefts/edit', function () 
 {
-    $theft = Job::findOrFail($id);
-    if ($theft) {
-        return view('thefts.edit', ['theft' => $theft]);
-    }
-    
+    // $theft = Job::findOrFail($id);
+    // if ($theft) {
+    //     return view('thefts.edit', ['theft' => $theft]);
+    // }
+    return view('thefts.edit');
 });
 
-Route::patch('/thefts/{id}/edit', function ($id)
+Route::patch('/thefts/edit', function ()
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('/thefts/'.$theft->id.'/2-find');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('/thefts/2-find');
 });
 
-Route::get('/thefts/{id}/2-find', function ($id) 
+Route::get('/thefts/2-find', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.2-find', ['theft' => $theft]);
-    }
+    // if ($theft) {
+    //     return view('thefts.2-find', ['theft' => $theft]);
+    // }
+    return view('thefts.2-find');
 });
 
-Route::patch('/thefts/{id}/2-find', function ($id) 
+Route::patch('/thefts/2-find', function () 
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('/thefts/'.$theft->id.'/3-callcops');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('/thefts/3-callcops');
 });
 
-Route::get('/thefts/{id}/2-find-not', function ($id) 
+Route::get('/thefts/2-find-not', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.2-find-not', ['theft' => $theft]);
-    }
+    // if ($theft) {
+    //     return view('thefts.2-find-not', ['theft' => $theft]);
+    // }
+    return view('thefts.2-find-not');
 });
 
-Route::patch('/thefts/{id}/2-find-not', function ($id) 
+Route::patch('/thefts/2-find-not', function () 
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('/thefts/'.$theft->id.'/3-callcops');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('/thefts/3-callcops');
 });
 
-Route::get('thefts/{id}/3-callcops', function ($id) 
+Route::get('thefts/3-callcops', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.3-callcops', ['theft' => $theft]);
-    }
+    // if ($theft) {
+    //     return view('thefts.3-callcops', ['theft' => $theft]);
+    // }
+    return view('thefts.3-callcops');
 });
 
-Route::patch('thefts/{id}/3-callcops', function ($id) 
+Route::patch('thefts/3-callcops', function () 
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('thefts/'.$theft->id.'/3-wheereport');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('thefts/3-wheereport');
 });
 
-Route::get('thefts/{id}/3-wheereport', function ($id) 
+Route::get('thefts/3-wheereport', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.3-wheereport', ['theft' => $theft]);
+    // if ($theft) {
+    //     return view('thefts.3-wheereport', ['theft' => $theft]);
 
-    };
+    // };
+            return view('thefts.3-wheereport');
 });
 
-Route::patch('/thefts/{id}/3-wheereport', function ($id)
+Route::patch('/thefts/3-wheereport', function ()
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('thefts/'.$theft->id.'/4-policereport');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('thefts/4-policereport');
 });
 
-Route::get('thefts/{id}/4-policereport', function ($id) 
+Route::get('thefts/4-policereport', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.4-policereport', ['theft' => $theft]);
+    // if ($theft) {
+    //     return view('thefts.4-policereport', ['theft' => $theft]);
 
-    }
+    // }
+    return view('thefts.4-policereport');
 });
 
-Route::patch('thefts/{id}/4-policereport', function ($id)
+Route::patch('thefts/4-policereport', function ()
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('thefts/'.$theft->id.'/5-thanks');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('thefts/5-thanks');
 });
 
 
-Route::get('thefts/{id}/5-bike-found', function ($id) 
+Route::get('thefts/5-bike-found', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.5-bike-found');
-    }
+    // if ($theft) {
+    //     return view('thefts.5-bike-found');
+    // }
+    return view('thefts.5-bike-found');
 });
 
-Route::patch('thefts/{id}/5-bike-found', function ($id)
+Route::patch('thefts/5-bike-found', function ()
 {
-    $theft = Job::findOrFail($id);
-    $theft->salary = request('salary');
-    $theft->save();
-    return redirect('thefts/'.$theft->id.'/5-thanks');
+    // $theft = Job::findOrFail($id);
+    // $theft->salary = request('salary');
+    // $theft->save();
+    return redirect('thefts/5-thanks');
 });
 
-Route::get('thefts/{id}/5-thanks', function ($id) 
+Route::get('thefts/5-thanks', function () 
 {
-    $theft = Job::findOrFail($id);
+    // $theft = Job::findOrFail($id);
 
-    if ($theft) {
-        return view('thefts.5-thanks');
-    }
+    // if ($theft) {
+    //     return view('thefts.5-thanks');
+    // }
+    return view('thefts.5-thanks');
 });
+
 
 // jobs below
 
-Route::get('/jobs', function () {
-    // $jobs = Job::with('employer')->simplePaginate(3);
+// Route::get('/jobs', function () {
+//     // $jobs = Job::with('employer')->simplePaginate(3);
 
-    return view('jobs.index', [
-        'jobs' => Job::all()
+//     return view('jobs.index', [
+//         'jobs' => Job::all()
            
-    ]);
-});
+//     ]);
+// });
 
 
 
@@ -216,32 +224,32 @@ Route::get('/jobs', function () {
 //     return redirect('/jobs');
 // });
 // Ahoy Show below, in ep (16) 01:56
-Route::get('/jobs/{id}', function ($id) {
-    $jobs = Job::findOrFail($id);
+// Route::get('/jobs/{id}', function ($id) {
+//     $jobs = Job::findOrFail($id);
     
-    return view('jobs.show', ['job' => $jobs]);
-});
+//     return view('jobs.show', ['job' => $jobs]);
+// });
 
-Route::get('/upload', function () {
-    return view('upload');
-});
+// Route::get('/upload', function () {
+//     return view('upload');
+// });
 
 
-route::get('/jobs/{id}/edit', function ($id) 
-{
-    $jobs = Job::findOrFail($id);
+// route::get('/jobs/{id}/edit', function ($id) 
+// {
+//     $jobs = Job::findOrFail($id);
 
-    return view('jobs.edit', ['job' => $jobs]);
-});
+//     return view('jobs.edit', ['job' => $jobs]);
+// });
 
-Route::patch('/jobs/{id}', function ($id) 
-{
-    $jobs = Job::findOrFail($id);
+// Route::patch('/jobs/{id}', function ($id) 
+// {
+//     $jobs = Job::findOrFail($id);
 
-    $jobs->title = request('title');
-    $jobs->save();
-    return redirect('/jobs/'.$jobs->id);
-});
+//     $jobs->title = request('title');
+//     $jobs->save();
+//     return redirect('/jobs/'.$jobs->id);
+// });
 
 // Route::get('/', function () {
     //     return view('home', [
@@ -423,15 +431,15 @@ Route::patch('/jobs/{id}', function ($id)
 // });
 
 // Destroy
-Route::delete('/jobs/{id}', function ($id) {
-    // authorize (On hold...)
+// Route::delete('/jobs/{id}', function ($id) {
+//     // authorize (On hold...)
 
-    // delete the job
-    // $job = Job::findOrFail($id);
-    // $job->delete();
-    Job::findOrFail($id)->delete();
+//     // delete the job
+//     // $job = Job::findOrFail($id);
+//     // $job->delete();
+//     Job::findOrFail($id)->delete();
 
-    // redirect to jobs page 
+//     // redirect to jobs page 
 
-    return redirect('/jobs');
-});    
+//     return redirect('/jobs');
+// });    

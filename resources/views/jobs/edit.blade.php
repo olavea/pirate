@@ -3,7 +3,8 @@
     ⛵Edit Your Tale: {{ $job['title']}}
     </x-slot:heading>
     <!-- 15:43 @csrf  -->
-    <form method="POST" action="/jobs/{{ $job['id'] }}">
+    <!-- <form method="POST" action="/jobs/{{ $job['id'] }}"> -->
+    <form method="POST" action="/jobs/">
         @csrf 
         @method('PATCH')
 
@@ -61,7 +62,7 @@
                 <button form="delete-form" class="text-red-600 font-bold" href="">Delete</button>
             </div>
         </div>
-        <div class="flex items-center gap-x-6">
+        <!-- <div class="flex items-center gap-x-6">
             <a href="/jobs/{{ $job['id'] }}" class="text-sm/6 font-semibold text-gray-900">Cancel</a>
             <div>
                 <button 
@@ -72,12 +73,12 @@
                     Update
                 </button>
             </div>
-        </div>    
+        </div>     -->
     </div>
     </form>
-    <form method="POST" action="/jobs/{{ $job['id'] }}" class="hidden" id="delete-form">
+    <form method="POST" action="/jobs/" class="hidden" id="delete-form">
         @csrf 
         @method('DELETE')
     </form>
-
+    <!-- <form method="POST" action="/jobs/{{ $job['id'] }}" class="hidden" id="delete-form"> -->
 </x-layout>
