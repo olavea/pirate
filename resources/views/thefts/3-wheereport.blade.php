@@ -10,7 +10,7 @@
 
 
 
- <form method="POST" action="/thefts/{{ $theft->id }}/3-wheereport">
+ <form method="POST" action="/thefts/3-wheereport">
     @csrf
     @method('PATCH')
     

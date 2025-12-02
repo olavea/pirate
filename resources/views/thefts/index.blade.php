@@ -1,4 +1,4 @@
-<x-layout>
+<!-- <x-layout>
     <x-slot:heading>
         ⛵ Tall Tales
         
@@ -13,4 +13,4 @@
         </li>
     @endforeach    
 </ul>
-</x-layout>
+</x-layout> -->

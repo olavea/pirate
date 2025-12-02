@@ -1,16 +1,15 @@
-<p>Sykkeltyv jakt 🦾👮 -> 🚴‍♀️🦹‍♀️</p>
-<p>Trinn 2 av 5</p>
+<p>Min Side</p>
+<p>Trinn 2 av 3</p>
+
 <h2>2. Airtag hjelp</h2>
 
 <p>Brukte du rett telefon til å</p> 
-<a href="#">Åpne: Hvor er app / Find My</a>
-<p>Velg:</p>
-<p>- objekter</p>
-<p>- Whee!</p>
-<p>- ditt navn</p>
+<a href="#">Åpne: Hvor er/find my → objekter. </a>
+
+<p>Velg Whee! - ditt navn</p>
 
 <!-- Theft form at http://whee-laravel.test/thefts/{id}/2-find-not  -->
-<form method="POST" action="/thefts/{{ $theft->id }}/2-find-no" enctype="multipart/form-data">
+<form method="POST" action="/thefts/2-find-not" enctype="multipart/form-data">
     @method('PATCH')
     @csrf
     
@@ -31,29 +30,31 @@
     </div>
 
     <div>
-    
+        <h3>Whee! Hjalp meg å aktivere min find my</h3>
+        <p>Jeg ser sykkelen i find my appen</p>
         <br />
-        <button type="submit">Jeg ser sykkelen i find my appen</button>
+        <button type="submit">Varsle politiet</button>
         <br />
         <!-- These 2 buttons below
         have "columns" that
         are not yet migrated -->
         <br />
          <!-- please_help_me_activate_my_find_my_sweet_whee -->
-        <button>Whee! Hjelp meg å aktivere min find my</button>
+        <!-- <button>Whee! Hjelp meg å aktivere min find my</button> -->
         <br />
 
         <h3>Jeg har ikke iPhone</h3>
-        <br />
+        
          <!-- whee_must_activate_their_find_my -->
-        <button>Whee! må aktivere sin egen find my</button>
-        <br />
+        <!-- <button>Whee! må aktivere sin egen find my</button> -->
+        <p>Whee! må aktivere sin egen find my</p>
+        
         <p>Og ringe politiet FOR meg</p>
-        <!-- <a href="/thefts/{{ $theft->id }}/3-callcops">Ring politiet</a> -->
+        
         <br />
         
         <br />
-        <a href="/thefts/{{ $theft->id }}/2-find">Tilbake</a>
+        <a href="/thefts/2-find">Tilbake</a>
         <br />
         <br />
         <!-- 
@@ -75,6 +76,6 @@
         </div>
         
         -->
-        <button>Det går ikke / find_my_not_working</button>
+        <p>Det går ikke / find_my_not_working</p>
     </div>
 </form>
