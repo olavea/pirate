@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html class="h-full bg-emerald-400" lang="en">
+<html class="h-full bg-yellow-400" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" 
         content="width=device-width, initial-scale=1">
-        @vite('resources/css/app.css')
+
     <title>pirate uploads</title>
     <link rel="icon" href="favicon.svg">
-    
-    @vite(['resources/js/app.js', 'resources/css/app.css'])
+    @vite(['resources/js/app.js'])
+
 </head>
-<body class="h-full p-4 bg-gradient-to-b from-pink-400 via-orange-400 to-yellow-400 dark:bg-gradient-to-b dark:from-emerald-800 dark:to-emerald-500 font-black">
+<body class="h-full p-4 bg-gradient-to-b from-orange-600 via-orange-400 to-yellow-400 dark:bg-gradient-to-b dark:from-orange-600 via-orange-400 dark:to-yellow-400 font-black">
 <!--
   This example requires updating your template:
 
@@ -20,7 +20,7 @@
   ```
 -->
 <div class="min-h-full">
-  <nav class="rounded-t-2xl bg-gradient-to-b from-purple-800 to-blue-500 dark:bg-gradient-to-b dark:from-purple-800 dark:to-blue-500">
+  <nav class="rounded-t-2xl bg-gradient-to-b from-yellow-400 to-orange-400 dark:bg-gradient-to-b dark:from-yellow-400 dark:to-orange-600">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
@@ -30,9 +30,9 @@
           <div class=" md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <x-nav href="/" :active="request()->is('/')">Tales</x-nav>
+              <x-nav href="/" :active="request()->is('/')">Hjem</x-nav>
               
-              <x-nav href="/jobs/create" :active="request()->is('jobs/create')">Your Tale</x-nav>
+              <x-nav href="/thefts/create" :active="request()->is('jobs/create')">🕵🏻‍♀️ Hjelp, sykkelen min er stjålet </x-nav>
               
             </div>
           </div>
@@ -88,7 +88,7 @@
           class="text-xl sm:text-xl md:text-3xl lg:text-5xl  px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600" 
           href="/jobs/create"
         >
-          Add a Tale
+          Loot
         </x-button>
       </div>  
       <h1 
