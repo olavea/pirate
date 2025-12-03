@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full bg-yellow-100" lang="en">
+<html class="h-full bg-white" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" 
@@ -32,23 +32,7 @@
   </nav>
 
   
-    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">
-      <div>
-        <x-button 
-          class="hidden text-xl sm:text-xl md:text-3xl lg:text-5xl  px-2 py-2 rounded-xl bg-gradient-to-b from-yellow-300 to-orange-500 text-right font-bold tracking-tight text-white hover:bg-gradient-to-b hover:from-yellow-400 hover:to-orange-600" 
-          href="/jobs/create"
-        >
-          Loot
-        </x-button>
-      </div>  
-      <div class="underline">
-        <x-nav href="/thefts/create" :active="request()->is('jobs/create')">🕵🏻‍♀️ Hjelp, sykkelen min er stjålet </x-nav>
-      </div>
-
-      
-
-
-    </div>
+    
   
   <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
