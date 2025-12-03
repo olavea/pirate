@@ -20,7 +20,7 @@
           <div class=" md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <x-nav href="/" :active="request()->is('/')">Min Whee!</x-nav>
+              <x-nav href="/" :active="request()->is('/')">{{ $heading }}</x-nav>
               
               
               

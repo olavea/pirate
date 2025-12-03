@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Min side
+        Min Whee!
         
     
     </x-slot:heading>
