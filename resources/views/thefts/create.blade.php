@@ -1,5 +1,8 @@
 <x-blehout>
-    <p>Meld tyveri</p>
+    <x-slot:heading>
+        Meld tyveri
+    </x-slot:heading>
+
     <p>Sykkeltyveri er så 💩 Nå gjelder det å handle raskt!</p>
 
     <p>Gjør dette:</p>
