@@ -6,10 +6,9 @@
     <p>Sykkeltyveri er så 💩 Nå gjelder det å handle raskt!</p>
 
     <p>Gjør dette:</p>
-
-        <p>Ta bilder</p>
-        <p>Sjekk posisjon</p>
-        <p>Ring politiet</p>
+    <p>Ta bilder</p>
+    <p>Sjekk posisjon</p>
+    <p>Ring politiet</p>
 
     <!-- Theft form at ..../thefts/create  -->
     <form method="POST" action="/thefts">

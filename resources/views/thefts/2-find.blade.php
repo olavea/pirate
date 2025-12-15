@@ -6,7 +6,12 @@
     <p>Trinn 2 av 3</p>
     <h2>2. Sjekk hvor sykkelen  er</h2>
 
-    <a href="#">Åpne: Hvor er/find my → objekter. </a>
+    <a 
+       href="#"
+       class="underline"
+    >
+        Åpne: Hvor er/find my → objekter. 
+    </a>
 
     <p>Velg Whee! - ditt navn</p>
     
@@ -56,7 +61,10 @@
             <br />
             
             <br />
-            <a href="/thefts/2-find-not">Det går ikke</a>
+            <div class="ml-10">
+                <a class="underline text-orange-600" href="/thefts/2-find-not">Det går ikke</a>
+                <p>Hvis du ikke har iphone, eller ikke kan finne airtagen.</p>
+            </div>  
             <!-- <div>
                 <label for="find_my_not_working">find_my_not_working </label>
                 <br />
@@ -77,5 +85,5 @@
             -->
         </div>
     </form>
-    <p>Hvis du ikke har iphone, eller ikke kan finne airtagen.</p>
+    
 </x-blehout>

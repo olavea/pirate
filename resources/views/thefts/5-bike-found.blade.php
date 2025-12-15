@@ -1,6 +1,7 @@
 <x-blehout>
-    <p>Sykkeltyv jakt 🦾👮 -> 🚴‍♀️🦹‍♀️</p>
-    <p>Trinn 5 av 5</p>
+    <x-slot:heading>
+        Min Side
+    </x-slot:heading>
     <h2>5. Sykkelen vår er gjenfunnet 🥳</h2>
     <form method="POST" action="/thefts/5-bike-found">
     

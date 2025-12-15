@@ -1,5 +1,7 @@
 <x-blehout>
-    <p>Min Side</p>
+    <x-slot:heading>
+        Min Side
+    </x-slot:heading>
     <p>Trinn 3 av 3</p>
     <h2>3. Varsle politiet</h2>
 
@@ -27,7 +29,7 @@
                 
             </div>        
             <div>
-                @error("called_police")
+                @error("police_say_no")
                     <p>{{ $message }}</p>
                 @enderror
             </div>

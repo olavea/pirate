@@ -1,12 +1,19 @@
 <x-blehout>
-    <p>Min Side</p>
+    <x-slot:heading>
+        Min Side
+    </x-slot:heading>
     <p>Trinn 4 av 4</p>
     <h2>4. Politianmeldelse</h2>
 
     <p>Sykkeltyverier skal politianmeldes, 
     og som kunde har du info om tyveriet.</p>
 
-    <a href="#">Anmeld på politi.no</a>
+    <a 
+        href="#"
+        class="underline text-orange-600"
+    >
+        Anmeld på politi.no
+    </a>
 
     <p>Husk!</p> 
     <p>Anmeld på vegne av Whee! org: 825 018 662</p>

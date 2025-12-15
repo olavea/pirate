@@ -50,7 +50,7 @@
                 <br />
 
                 <br />
-                <a href="/thefts/2-find">Hopp over</a>
+                <a class="underline text-orange-600" href="/thefts/2-find">Hopp over</a>
             </div>
             
 

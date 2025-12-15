@@ -1,11 +1,18 @@
 <x-blehout>
-    <p>Min Side</p>
+    <x-slot:heading>
+        Min Side
+    </x-slot:heading>
     <p>Trinn 2 av 3</p>
 
     <h2>2. Airtag hjelp</h2>
 
     <p>Brukte du rett telefon til å</p> 
-    <a href="#">Åpne: Hvor er/find my → objekter. </a>
+    <a 
+        href="#"
+        class="underline text-orange-600"
+    >
+        Åpne: Hvor er/find my → objekter. 
+    </a>
 
     <p>Velg Whee! - ditt navn</p>
 
@@ -30,11 +37,18 @@
             @enderror
         </div>
 
-        <div>
+        <div class="ml-10">
             <h3>Whee! Hjalp meg å aktivere min find my</h3>
             <p>Jeg ser sykkelen i find my appen</p>
             <br />
-            <button type="submit" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800">Varsle politiet</button>
+        
+            <button 
+                type="submit" 
+                class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800"
+            >
+                Varsle politiet
+            </button>
+        </div>    
             <br />
             <!-- These 2 buttons below
             have "columns" that
@@ -43,12 +57,12 @@
             <!-- please_help_me_activate_my_find_my_sweet_whee -->
             <!-- <button>Whee! Hjelp meg å aktivere min find my</button> -->
             <br />
-
+        <div class="ml-10">
             <h3>Jeg har ikke iPhone</h3>
             
             <!-- whee_must_activate_their_find_my -->
             <!-- <button>Whee! må aktivere sin egen find my</button> -->
-            <p>Whee! må aktivere sin egen find my</p>
+            <p class="underline text-orange-600">Whee! må aktivere sin egen find my</p>
             
             <p>Og ringe politiet FOR meg</p>
             
@@ -77,7 +91,7 @@
             </div>
             
             -->
-            <p>Det går ikke / find_my_not_working</p>
+            <p class="underline text-orange-600">Det går ikke / find_my_not_working</p>
         </div>
     </form>
 </x-blehout>
