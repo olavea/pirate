@@ -11,5 +11,5 @@ use Illuminate\Support\Arr;
 route::get('ooki', function ()
 {
     // Get the data from the callingallpapers External API for Conferences
-    return Http::get('https://api.callingallpapers.com/v1/cfp');
+    return Http::get('https://api.callingallpapers.com/v1/cfp')->json();
 });
