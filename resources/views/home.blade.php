@@ -10,7 +10,14 @@
       <div class="underline">
         <x-nav href="/thefts/create" :active="request()->is('jobs/create')">🕵🏻‍♀️ Hjelp, sykkelen min er stjålet </x-nav>
       </div>
-
+      <div>
+            <a
+                href="#"
+                class="ml-auto"
+                >
+                Help! My 🚴‍♀️ is stolen
+            </a>
+        </div>
       
 
 
