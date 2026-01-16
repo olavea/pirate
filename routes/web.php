@@ -8,6 +8,42 @@ Route::get('/', function () {
     return view('home');
 });
 
+
+Route::get('/sykkel/lengde', function ()
+{
+    // Here a user will choose long or short bike
+    // Is it here a user will see if a bike is free to be rented?
+    return view('sykkel.0-lengde');
+});
+
+Route::get('/sykkel/abonnement', function ()
+{
+    return view('sykkel.1-abonnement');
+});
+
+Route::get('/sykkel/bestilling', function ()
+{
+    return view('sykkel.2-bestilling');
+});
+
+Route::get('/sykkel/bekreft-sms', function ()
+{
+    return view('sykkel.3-bekreft-sms');
+});
+
+Route::get('/sykkel/betaling', function ()
+{
+    // return '/sykler/bestill/recXZo3GfvrzAYtpE';
+    return view('sykkel.4-betaling');
+});
+
+Route::get('/sykkel/ferdig', function ()
+{
+    return view('sykkel.5-ferdig');
+});
+
+// delete stuff below
+
 // Create
 // Route::get('/jobs/create', function () {
     
