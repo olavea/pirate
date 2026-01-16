@@ -2,7 +2,8 @@
         <!-- Main content -->
         <div>
             <p>Bestillingsskjema</p>
-            <p>⚪ Jeg har lest, forstått og samtykker i Whee!</p>
+            <p>Skriv inn navn, adresse osv</p>
+            <!-- <p>⚪ Jeg har lest, forstått og samtykker i Whee!</p> -->
             <p>Du får en sms med en kode du skal kopiere inn i neste side</p>
             <br />
                 <a
