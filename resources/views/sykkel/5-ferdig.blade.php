@@ -1,8 +1,9 @@
 <div class="flex flex-col justify-center">
         <!-- Main content -->
         <div>
-            <p>5-ferdig</p>
-            
+            <p>Ferdig</p>
+            <p>Du får sms med lenke for å booke ut-levering</p>
+
                 <!-- <a
                     href="#"
                 >
