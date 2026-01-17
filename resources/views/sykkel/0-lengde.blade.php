@@ -1,16 +1,27 @@
-
-    <div class="flex flex-col justify-center">
-        <!-- Main content -->
-        <div>
-            <p>🔘 Lang sykkel. Plass til last og 2 passasjerer</p>
-            <p>⚪ Kort sykkel. Plass til last og 1 passasjer</p>
-            <br />
-            <a 
-                href="/sykkel/abonnement"
-            >
-                Gå videre
-            </a>
+<x-blehout>
+    <x-slot:heading>
+        <p class="text-4xl">🏠</p>  
+    </x-slot:heading>
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <!-- Main content -->
+            <div class="space-y-1 text-center">
+                <h2 class="text-2xl font-semibold text-gray-900">Velg sykkellengden som passer for deg</h2>
+            </div>                
+                <div class="space-y-3">
+                    <p>🔘 Lang sykkel med plass til last og 2 passasjerer.</p>
+                    <p>⚪ Kort sykkel med plass til last og 1 passasjer.</p>
+                    <br />
+                </div>    
+                <div class="flex flex-col justify-center text-center">
+                    <a 
+                        href="/sykkel/abonnement"
+                        class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+                    >
+                        Gå videre
+                    </a>
+                </div>
+            </div>
         </div>
-        <br />
     </div>
-
+</x-blehout>

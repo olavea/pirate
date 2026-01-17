@@ -1,13 +1,29 @@
 <x-blehout>
     <x-slot:heading>
-        Min Whee!
+        Test
         
     
     </x-slot:heading>
     <br />
-    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">
+    <div class="flex flex-col justify-center text-center py-3">
+        <a 
+            href="/sykkel/lengde"
+            class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+        >
+          Velg sykkellengde og bestill
+        </a>
+    </div>
+    <div class="flex flex-col justify-center text-center py-3">
+        <a 
+            href="/thefts/create"
+            class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+        >
+          Hjelp, sykkelen min er stjålet
+        </a>
+    </div>
+    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between lg:px-8">
       <div class="underline">
-        <x-nav href="/sykkel/lengde" :active="request()->is('sykkel/lengde')">🚴‍♀️ Jeg vil velge sykkellengde </x-nav>      
+        <x-nav href="/sykkel/lengde" :active="request()->is('sykkel/lengde')">🚴‍♀️ Velg sykkellengde og bestill </x-nav>      
       </div>
     </div>
     <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between  lg:px-8">

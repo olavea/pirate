@@ -1,21 +1,31 @@
-<div class="flex flex-col justify-center">
-        <!-- Main content -->
-        <div>
-            <p>🔘 12 mnd binding</p>
-            <p>⚪ 3 mnd oppsigelsestid</p>
-            <br />
+<x-blehout>
+    <x-slot:heading>
+        <p class="text-4xl">🏠</p>   
+    </x-slot:heading>
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <!-- Main content -->
+            <div class="space-y-1 text-center">
+                <h2 class="text-2xl font-semibold text-gray-900">Velg abonnementet som passer for deg</h2>
+            </div>        
+            <div class="space-y-3">
+                <p>🔘 12 mnd binding</p>
+                <p>⚪ 3 mnd oppsigelsestid</p>
+                <br />
+            </div>    
+            <div class="flex flex-col justify-center text-center">
                 <a
                     href="/sykkel/bestilling"
+                    class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
                 >
                     Gå videre
                 </a>
+            </div>
+            <br />
+            <div>
+                <a href="/sykkel/lengde" class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">Tilbake</a>
+            </div>
         </div>
-        <br />
-        <div>
-            <a href="/sykkel/lengde">Tilbake</a>
-                    
-                </a>
-
-        </div>
-
     </div>
+</x-blehout>
+    
