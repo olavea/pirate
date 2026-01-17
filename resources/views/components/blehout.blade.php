@@ -13,7 +13,7 @@
 <body>
 <div class="min-h-full">
   <nav>
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto max-w-7xl px-1 sm:px-2 lg:px-3">
       <div class="flex h-16 items-center justify-between">
         <div class="flex items-center">
           
@@ -33,13 +33,14 @@
 
   
     
-  
-  <main>
-    <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-      <!-- Your slot content -->
-      {{$slot}}
-    </div>
-  </main>
+  <div class="py-6">
+    <main>
+      <div class="mx-auto max-w-4xl px-4 py-4 sm:px-6 lg:px-8">
+        <!-- Your slot content -->
+        {{$slot}}
+      </div>
+    </main>
+  </div>
 </div>
 
     
