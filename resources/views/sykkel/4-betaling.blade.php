@@ -20,11 +20,11 @@
                     Betaling 
                 </a>    
             </div>
-            <br />
-            <div>
+            
+            <div class="text-center">
                 <a
                     href="/sykkel/bekreft-sms"
-                    class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                    class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
                 >
                     Tilbake
                 </a>

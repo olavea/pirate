@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-full bg-white" lang="en">
+<html class="h-full" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" 
@@ -11,38 +11,39 @@
 
 </head>
 <body>
-<div class="min-h-full">
-  <nav>
-    <div class="mx-auto max-w-7xl px-1 sm:px-2 lg:px-3">
-      <div class="flex h-16 items-center justify-between">
-        <div class="flex items-center">
-          
-          <div class=" md:block">
-            <div class="ml-10 flex items-baseline space-x-4">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <x-nav href="/" :active="request()->is('/')">{{ $heading }}</x-nav>
-              
-              
-              
+<body class="bg-cream-40 text-black-40 h-full font-medium">
+  <!-- Above is base.blade.php in whee-laravel minus lang, csrf token title app.css  -->
+  <!-- No changes to nav -->
+  <div class="min-h-full">
+    <nav>
+      <div class="mx-auto max-w-7xl px-1 sm:px-2 lg:px-3">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            
+            <div class=" md:block">
+              <div class=" flex items-baseline space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <x-nav href="/" :active="request()->is('/')">{{ $heading }}</x-nav>
+                
+                
+                
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
-
+    </nav>
   
-    
-  <div class="py-6">
-    <main>
-      <div class="mx-auto max-w-4xl px-4 py-4 sm:px-6 lg:px-8">
-        <!-- Your slot content -->
-        {{$slot}}
-      </div>
-    </main>
+    <div class="py-6">
+      <main>
+        <div class="mx-auto max-w-4xl px-4 py-4 sm:px-6 lg:px-8">
+          <!-- My slot content -->
+          {{$slot}}
+        </div>
+      </main>
+    </div>
   </div>
-</div>
 
-    
+  </div>
 </body>
 </html>
