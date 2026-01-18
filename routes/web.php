@@ -72,6 +72,7 @@ Route::get('/sykkel/ferdig', function ()
 //     ]);
 // });
 
+// 0
 Route::get('/thefts/create', function () 
 {
     return view('thefts.create');
@@ -93,7 +94,7 @@ Route::post('/thefts', function ()
     
 //     return view('thefts.show', ['job' => $jobs]);
 // });
-
+// 1 photo
 Route::get('/thefts/edit', function () 
 {
     // $theft = Job::findOrFail($id);
@@ -111,6 +112,7 @@ Route::patch('/thefts/edit', function ()
     return redirect('/thefts/2-find');
 });
 
+// 2
 Route::get('/thefts/2-find', function () 
 {
     // $theft = Job::findOrFail($id);
@@ -147,6 +149,7 @@ Route::patch('/thefts/2-find-not', function ()
     return redirect('/thefts/3-callcops');
 });
 
+// 3 callcops
 Route::get('thefts/3-callcops', function () 
 {
     // $theft = Job::findOrFail($id);
@@ -165,7 +168,17 @@ Route::patch('thefts/3-callcops', function ()
     return redirect('thefts/3-wheereport');
 });
 
-Route::get('thefts/3-wheereport', function () 
+// 4 
+Route::get('/thefts/3-whee-intro', function ()
+{
+    return view('thefts.3-whee-intro');
+});
+
+
+// 5
+
+
+Route::get('/thefts/3-wheereport', function () 
 {
     // $theft = Job::findOrFail($id);
 
@@ -184,7 +197,7 @@ Route::patch('/thefts/3-wheereport', function ()
     return redirect('thefts/4-policereport');
 });
 
-Route::get('thefts/4-policereport', function () 
+Route::get('/thefts/4-policereport', function () 
 {
     // $theft = Job::findOrFail($id);
 
