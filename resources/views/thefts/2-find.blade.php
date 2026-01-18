@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     
     <p>Trinn 2 av 3</p>

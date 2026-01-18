@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Meld tyveri
+        Sykkeltyveri
     </x-slot:heading>
 
     <!-- Theft form at http://whee-laravel.test/thefts/{id}/edit  -->

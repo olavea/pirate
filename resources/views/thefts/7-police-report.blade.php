@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     <p>Trinn 4 av 4</p>
     <h2>4. Politianmeldelse</h2>

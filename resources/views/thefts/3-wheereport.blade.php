@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Tyveri
+        Sykkeltyveri
     </x-slot:heading>
     
     <div class="max-w-4xl space-y-6">

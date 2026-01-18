@@ -1,6 +1,6 @@
 
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     <h2>Takk!</h2>
 

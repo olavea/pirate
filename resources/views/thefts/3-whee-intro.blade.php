@@ -24,32 +24,24 @@
                     <li>Levere politianmeldelse</li>
                 </ol>
             </div>
+            <div class="flex flex-col gap-3">
+                <a
+                    href="/thefts/3-wheereport" 
+                    class="w-full text-center rounded-lg bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700"
+                >
+                    Jeg forstår - involver sjefen
+                </a>      
 
+                <a
+                    href="/"
+                    class="w-full text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                >
+                    Avbryt - tilbake til forsiden
+                </a>
+             
 
-    <form 
-        method="POST" 
-        action="/thefts/3-wheereport"
-    >
-        @csrf
-        @method('PATCH')
-    </form>   
-    <div class="text-center">   
-        <a
-            href="/thefts/3-wheereport" 
-            class="w-full rounded-lg bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700"
-        >
-            Jeg forstår - involver sjefen
-        </a>      
-    </div>
-    <div class="text-center">   
-        <a
-            href="/"
-            class="w-full text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
-        >
-            Avbryt - tilbake til forsiden
-        </a>
-    </div>
-    </div>
+            </div>            
+        </div>
     </div>
 </x-blehout>    
 
