@@ -1,24 +1,23 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
-    <p>Trinn 3 av 4</p>
-    <h2>3. Varsle Whee!</h2>
+    
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <div class="space-y-1 text-center">
+                <p class="text-4xl">🚴📝</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Sjefen din tar over</h2>
+                <p class="text-gray-600">Hun trenger litt informasjon fra deg.</p>
+            </div>
 
-    <p>Hvis politiet ikke kan og/eller ikke sykkelen er funnet innen 24 timer, gjør følgende:</p>
 
-    <!-- <a href="#">Åpne: Hvor er app / Find My</a> -->
-    <a 
-        href="#"
-        class="underline text-orange-600"
+
+
+    <form 
+        method="POST" 
+        action="/thefts/3-wheereport"
     >
-        Gå til Hvor er/Find my: 
-    </a>
-    <p>Legg +4700000000 til på Airtagen. </p>
-
-
-
-    <form method="POST" action="/thefts/3-wheereport">
         @csrf
         @method('PATCH')
         
@@ -33,23 +32,43 @@
             />
             
         </div>
+        
+        <div class="space-y-4 rounded-lg border-2 border-gray-200 bg-white p-6">
+                <p class="font-medium text-gray-900">Beskriv hva som skjedde</p>
+                <textarea
+                        id="theft_description"
+                        name="theft_description"
+                        rows="5"
+                        maxlength="2000"
+                        class="w-full rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-orange-400 focus:bg-white focus:outline-none focus:ring-2 focus:ring-orange-400/20"
+                        placeholder="F.eks: Sykkelen ble stjålet utenfor matbutikken på Grünerløkka tirsdag 14. januar rundt kl. 18:00. Den var låst til et sykkelstativ..."
+                >{{ old('theft_description', '') }}</textarea>
+            </div>
         <div>        
             @error("whee_report")
                 <p>{{ $message }}</p>
             @enderror
         </div>
         
-        <div>
-            <button type="submit" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800">
-                Meld tyveri til Whee!
-            </button>
-        </div>               
+        
+        <button 
+            type="submit" 
+            class="w-full rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+        >
+            Gå videre
+        </button>
+                    
             
-    </form>       
-    <br />
-    <ul>
-        <li>Tyveri setter i gang etterforskning og utløser egenandel på 5000 kr</li>
-        <li>Hvis vi ikke finner sykkelen kan du velge om du vil avslutte leieforholdet eller ha erstatningssykkel</li>
-    </ul>
-
+    </form>   
+    
+    <div class="text-center">     
+        <a
+            href="/thefts/4-policereport"
+            class="w-full text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+        >
+            Hopp over
+        </a>
+    </div>
+    </div>
+    </div>
 </x-blehout>    

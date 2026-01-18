@@ -1,97 +1,61 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
-    <p>Trinn 2 av 3</p>
-
-    <h2>2. Airtag hjelp</h2>
-
-    <p>Brukte du rett telefon til å</p> 
-    <a 
-        href="#"
-        class="underline text-orange-600"
-    >
-        Åpne: Hvor er/find my → objekter. 
-    </a>
-
-    <p>Velg Whee! - ditt navn</p>
-
-    <!-- Theft form at http://whee-laravel.test/thefts/{id}/2-find-not  -->
-    <form method="POST" action="/thefts/2-find-not" enctype="multipart/form-data">
-        @method('PATCH')
-        @csrf
-        
-        <div>
-            <!-- <label for="find_my_activated">find_my_activated</label> -->
-            <br />
-            <input 
-                type="hidden" 
-                id="salary" 
-                name="salary" 
-                value="find_my_activated" 
-            />
-            
-        </div>        
-            @error("salary")
-                <p>{{ $message }}</p>
-            @enderror
-        </div>
-
-        <div class="ml-10">
-            <h3>Whee! Hjalp meg å aktivere min find my</h3>
-            <p>Jeg ser sykkelen i find my appen</p>
-            <br />
-        
-            <button 
-                type="submit" 
-                class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800"
-            >
-                Varsle politiet
-            </button>
-        </div>    
-            <br />
-            <!-- These 2 buttons below
-            have "columns" that
-            are not yet migrated -->
-            <br />
-            <!-- please_help_me_activate_my_find_my_sweet_whee -->
-            <!-- <button>Whee! Hjelp meg å aktivere min find my</button> -->
-            <br />
-        <div class="ml-10">
-            <h3>Jeg har ikke iPhone</h3>
-            
-            <!-- whee_must_activate_their_find_my -->
-            <!-- <button>Whee! må aktivere sin egen find my</button> -->
-            <p class="underline text-orange-600">Whee! må aktivere sin egen find my</p>
-            
-            <p>Og ringe politiet FOR meg</p>
-            
-            <br />
-            
-            <br />
-            <a href="/thefts/2-find">Tilbake</a>
-            <br />
-            <br />
-            <!-- 
-            <div>
-                <label for="find_my_not_working">find_my_not_working </label>
-                <br />
-                <input 
-                    type="string" 
-                    id="find_my_not_working" 
-                    name="find_my_not_working" 
-                    value="find_my_not_working" 
-                />
-            </div> 
-                
-            <div>        
-                @error("find_my_not_working")
-                    <p>{{ $message }}</p>
-                @enderror
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <div class="space-y-1 text-center">
+                <p class="text-4xl">🤔</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Problemer med Find My?</h2>
+                <p class="text-gray-600">La oss feilsøke sammen.</p>
             </div>
-            
-            -->
-            <p class="underline text-orange-600">Det går ikke / find_my_not_working</p>
+
+
+
+            <div class="space-y-4 rounded-lg border-2 border-gray-200 bg-white p-6">
+                <div class="space-y-4">
+                    <div class="border-b border-gray-200 pb-4">
+                        <p class="mb-2 font-semibold text-gray-900">Er AirTag'en koblet til en annen telefon?</p>
+                        <p class="text-sm text-gray-700">
+                            For eks. en kollegas? Sjekk Find My på den riktige telefonen.
+                        </p>
+                    </div>
+
+                    <div>
+                        <p class="mb-2 font-semibold text-gray-900">Er AirTagen koblet til sjefens! iPad?</p>
+                        <p class="text-sm text-gray-700">
+                            Hvis AirTagen er koblet til sjefens iPad, kan ikke du se den. Dette gjelder spesielt hvis du har Android. Sjefen sjekker den for deg.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form 
+                method="POST" 
+                action="/thefts/2-find-not" 
+                class="flex flex-col gap-4"
+            >
+                @method('PATCH')
+                @csrf
+                
+                <button 
+                    type="submit" 
+                    class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+                >
+                    Det funker nå!
+                </button>
+                <a
+                    href="/thefts/3-wheereport"
+                    class="text-center rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-700 transition-colors hover:border-gray-400 hover:bg-gray-50"
+                >
+                    AirTag er koblet til sjefens iPad
+                </a>
+                <a
+                    href="/thefts/3-wheereport"
+                    class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                >
+                    Jeg gir opp - gå videre
+                </a>
+            </form>
         </div>
-    </form>
+    </div>
 </x-blehout>

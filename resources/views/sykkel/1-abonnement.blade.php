@@ -21,9 +21,9 @@
                     Gå videre
                 </a>
             </div>
-            <br />
-            <div>
-                <a href="/sykkel/lengde" class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">Tilbake</a>
+            
+            <div class="text-center">
+                <a href="/sykkel/lengde" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">Tilbake</a>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     <h2>5. Sykkelen vår er gjenfunnet 🥳</h2>
     <form method="POST" action="/thefts/5-bike-found">

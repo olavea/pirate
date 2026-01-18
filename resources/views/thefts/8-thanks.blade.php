@@ -1,6 +1,6 @@
 
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     <h2>Takk!</h2>
 
@@ -23,4 +23,4 @@
 
     <p>Følg med på min side for statusoppdatering eller å melde endringer i saken.</p>
 
-    <a href="/">Tilbake til hjem</a>
+    <a href="/">Tilbake til forsiden</a>
