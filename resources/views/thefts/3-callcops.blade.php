@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
     <p>Trinn 3 av 3</p>
     <h2>3. Varsle politiet</h2>
@@ -11,44 +11,26 @@
     <!-- <a href="#">Ring 02800</a> -->
     <!-- <br />
     <br /> -->
-    <form method="POST" action="/thefts/3-callcops">
+    <form method="POST" action="/thefts/3-callcops" class="space-y-6">
             @csrf
             @method('PATCH')
             
-            <div>
-                <!-- <label for="police_say_no">police_say_no </label> -->
-                <!-- Should be 
-                police_say_no -->
-                <!-- <br /> -->
-                <input 
-                    type="hidden" 
-                    id="salary" 
-                    name="salary" 
-                    value="police_say_no" 
-                />
-                
-            </div>        
-            <div>
-                @error("police_say_no")
-                    <p>{{ $message }}</p>
-                @enderror
-            </div>
-            <div>
-                <button type="submit" class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800">
-                    Ring 02800
+            <div class="flex flex-col gap-3">
+                <a
+                    href="/thefts/5-thanks"
+                    class="text-center rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+                >
+                    Politiet hjelper meg!    
+                </a>
+                <button type="submit" class="text-center rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-600 transition-colors hover:border-gray-400 hover:text-gray-900">
+                    Politiet kunne ikke hjelpe
                 </button>
-            </div> 
-            <!-- The link below
-            has "columns" that
-            are not yet migrated -->
-            <br />
-            <!-- <p>Politiet jakter på sykkeltyven!</p> -->
-            <!-- police_is_hunting -->
-            
-            <!-- 
-            <br />
-            <br />
-            
-            <br /> -->
+                <a
+                    href="/thefts/3-whee-intro"
+                    class="py-2 text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                >
+                    Hopp over - jeg vil ikke ringe
+                </a>
+            </div>
     </form>       
 </x-blehout>

@@ -1,67 +1,61 @@
 <x-blehout>
     <x-slot:heading>
-        Min Side
+        Sykkeltyveri
     </x-slot:heading>
-    <p>Trinn 2 av 3</p>
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <div class="space-y-1 text-center">
+                <p class="text-4xl">🤔</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Problemer med Find My?</h2>
+                <p class="text-gray-600">La oss feilsøke sammen.</p>
+            </div>
 
-    <h2>2. Airtag hjelp</h2>
 
-    <p>Brukte du rett telefon til å</p> 
-    <a 
-        href="#"
-        class="underline text-orange-600"
-    >
-        Åpne: Hvor er/find my → objekter. 
-    </a>
 
-    <p>Velg Whee! - ditt navn</p>
+            <div class="space-y-4 rounded-lg border-2 border-gray-200 bg-white p-6">
+                <div class="space-y-4">
+                    <div class="border-b border-gray-200 pb-4">
+                        <p class="mb-2 font-semibold text-gray-900">Er AirTag'en koblet til en annen telefon?</p>
+                        <p class="text-sm text-gray-700">
+                            For eks. en kollegas? Sjekk Find My på den riktige telefonen.
+                        </p>
+                    </div>
 
-    <!-- Theft form at http://whee-laravel.test/thefts/{id}/2-find-not  -->
-    <form 
-        method="POST" 
-        action="/thefts/2-find-not" 
-        class="flex flex-col gap-4"
-    >
-        @method('PATCH')
-        @csrf
-        
-        <div>
-            <!-- <label for="find_my_activated">find_my_activated</label> -->
-            <br />
-            <input 
-                type="hidden" 
-                id="salary" 
-                name="salary" 
-                value="find_my_activated" 
-            />
-            
-        </div>        
-            @error("salary")
-                <p>{{ $message }}</p>
-            @enderror
+                    <div>
+                        <p class="mb-2 font-semibold text-gray-900">Er AirTagen koblet til sjefens! iPad?</p>
+                        <p class="text-sm text-gray-700">
+                            Hvis AirTagen er koblet til sjefens iPad, kan ikke du se den. Dette gjelder spesielt hvis du har Android. Sjefen sjekker den for deg.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <form 
+                method="POST" 
+                action="/thefts/2-find-not" 
+                class="flex flex-col gap-4"
+            >
+                @method('PATCH')
+                @csrf
+                
+                <button 
+                    type="submit" 
+                    class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
+                >
+                    Det funker nå!
+                </button>
+                <a
+                    href="/thefts/3-wheereport"
+                    class="text-center rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-700 transition-colors hover:border-gray-400 hover:bg-gray-50"
+                >
+                    AirTag er koblet til sjefens iPad
+                </a>
+                <a
+                    href="/thefts/3-wheereport"
+                    class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                >
+                    Jeg gir opp - gå videre
+                </a>
+            </form>
         </div>
-
-        <div class="ml-10">
-        
-            <button 
-                type="submit" 
-                class="relative inline-flex items-center px-4 py-2 ml-3 text-sm font-medium text-emerald-800 bg-white border-2 border-emerald-800 shadow-lg dark:shadow-lg dark:shadow-emerald-700 leading-5 rounded-md hover:bg-yellow-400 focus:outline-none focus:ring ring-gray-300 focus:border-blue-300 active:bg-gray-100 active:text-emerald-800 transition ease-in-out duration-150 dark:bg-yellow-100 dark:border-emerald-800 dark:text-emerald-800 dark:focus:border-blue-700 dark:active:bg-yellow-100 dark:active:text-emerald-800"
-            >
-                Det funker nå!
-            </button>
-            <a
-                href="/thefts/3-wheereport"
-                class="rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-700 transition-colors hover:border-gray-400 hover:bg-gray-50"
-            >
-                AirTag er koblet til Whee! verksted
-            </a>
-            <a
-                href="/thefts/3-wheereport"
-                class="text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
-            >
-                Jeg gir opp - gå videre
-            </a>
-        </div>    
-        
-    </form>
+    </div>
 </x-blehout>

@@ -165,7 +165,7 @@ Route::patch('thefts/3-callcops', function ()
     // $theft = Job::findOrFail($id);
     // $theft->salary = request('salary');
     // $theft->save();
-    return redirect('thefts/3-wheereport');
+    return redirect('/thefts/3-whee-intro');
 });
 
 // 4 
@@ -235,7 +235,7 @@ Route::patch('thefts/5-bike-found', function ()
     return redirect('thefts/5-thanks');
 });
 
-Route::get('thefts/5-thanks', function () 
+Route::get('/thefts/5-thanks', function () 
 {
     // $theft = Job::findOrFail($id);
 

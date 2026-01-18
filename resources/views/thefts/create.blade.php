@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Tyveri
+        Sykkeltyveri
     </x-slot:heading>
     <div class="max-w-4xl space-y-6">
         <div class="space-y-4">
@@ -34,10 +34,7 @@
                     
                 
                 </div>        
-                    @error("title")
-                        <p>{{ $message }}</p>
-                    @enderror
-                </div>
+                    
 
                 <div>
                     <!-- <label for="bike_thief_hunt_started">I start a bike_thief_hunt</label> -->
@@ -52,10 +49,7 @@
                     />
                     
                 </div>        
-                    @error("salary")
-                        <p>{{ $message }}</p>
-                    @enderror
-                </div>
+
                 <div>
                     <button 
                         type="submit" 

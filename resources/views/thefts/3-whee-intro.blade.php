@@ -1,6 +1,6 @@
 <x-blehout>
     <x-slot:heading>
-        Tyveri
+        Sykkeltyveri
     </x-slot:heading>
     
     <div class="max-w-4xl space-y-6">
@@ -17,7 +17,7 @@
 
                 <ol class="list-inside list-decimal space-y-2 text-gray-700">
                     
-                    <li>Del posisjon med sjefen!</li>
+                    <li>Dele posisjon med sjefen!</li>
                 
                     <li>Beskrive hvor og når det skjedde</li>
                     
@@ -32,30 +32,8 @@
     >
         @csrf
         @method('PATCH')
-        
-        <div>
-            <!-- <label for="whee_report">whee_report</label> -->
-            <br />
-            <input 
-                type="hidden" 
-                id="salary" 
-                name="salary" 
-                value="whee_report" 
-            />
-            
-        </div>
-        <div>        
-            @error("whee_report")
-                <p>{{ $message }}</p>
-            @enderror
-        </div>
-        
-                    
-            
     </form>   
     <div class="text-center">   
-        
-        
         <a
             href="/thefts/3-wheereport" 
             class="w-full rounded-lg bg-orange-600 px-6 py-3 font-medium text-white transition-colors hover:bg-orange-700"
@@ -64,8 +42,6 @@
         </a>      
     </div>
     <div class="text-center">   
-        
-        
         <a
             href="/"
             class="w-full text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
