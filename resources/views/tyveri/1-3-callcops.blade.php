@@ -21,7 +21,7 @@
                     og si:
                 </p>
                 <p class="text-xl leading-relaxed text-gray-600 italic">
-                    Jeg jobber hos X og elsykkelen min verdt mange titusener er stjålet og jeg vet hvor den er,
+                    Jeg er kunde hos Whee! og elsykkelen min verdt mange titusener er stjålet og jeg vet hvor den er,
                     kan dere hjelpe?
                 </p>
             </div>
@@ -32,22 +32,24 @@
             
             <div class="flex flex-col gap-3">
                 <a
-                    href="/thefts/5-thanks"
+                    href="/min-side/tyveri/waiting-police"
                     class="text-center rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
                 >
                     Politiet hjelper meg!    
                 </a>
-                <button type="submit" class="text-center rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-600 transition-colors hover:border-gray-400 hover:text-gray-900">
+                <a     
+                    href="/min-side/tyveri/whee-intro" 
+                    class="text-center rounded-lg border-2 border-gray-200 px-6 py-3 font-medium text-gray-600 transition-colors hover:border-gray-400 hover:text-gray-900">
                     Politiet kunne ikke hjelpe
-                </button>
+                </a>
                 <a
-                    href="/thefts/3-whee-intro"
+                    href="/min-side/tyveri/whee-intro"
                     class="py-2 text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
                 >
                     Hopp over - jeg vil ikke ringe
                 </a>
             </div>
-    </form> 
+    </form>       
     </div>
-    </div>      
+    </div>
 </x-blehout>

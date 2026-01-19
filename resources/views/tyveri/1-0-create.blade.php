@@ -31,7 +31,7 @@
 
                 <div>
                     <!-- <label for="bike_thief_hunt_started">I start a bike_thief_hunt</label> -->
-                    <br />
+                    
                     <!-- placeholder="bike_thief_hunt_started"  -->
                     <input 
                         type="hidden" 
@@ -39,12 +39,8 @@
                         name="title" 
                         value="bike_thief_hunt_started"
                         
-                    />
-                    
-                
-                </div>        
-                    
-
+                    />                                    
+                </div>                            
                 <div>
                     <!-- <label for="bike_thief_hunt_started">I start a bike_thief_hunt</label> -->
                     
@@ -59,26 +55,21 @@
                     
                 </div>        
 
-                <div>
-                    <button 
-                        type="submit" 
-                        class="w-full rounded-lg bg-green-600 px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-green-700"
+                <div class="flex flex-col gap-3">
+                    <a 
+                        href="/min-side/tyveri/photos" 
+                        class="w-full text-center rounded-lg bg-green-600 px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-green-700"
                     >
                         Start
-                    </button>
-                    <br />
-                    
-                </div>
-                
-            </form>
-            <a
-                href="/"
-                class="block text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
-            >
-                Avbryt
-            </a>
-
-                
+                    </a>
+                    <a
+                        href="/"
+                        class="block text-center text-sm font-medium text-gray-600 transition-colors hover:text-gray-900"
+                    >
+                        Avbryt
+                    </a>                                        
+                </div>                
+            </form>                
         </div>
     </div>
 </x-blehout>

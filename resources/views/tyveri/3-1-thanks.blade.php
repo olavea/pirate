@@ -21,7 +21,7 @@
 
             <div class="rounded-lg border-2 border-gray-200 bg-orange-50 p-6">
                 <p class="text-sm font-light text-gray-900">
-                    Hvis politiet ikke finner sykkelen innen 24 timer, kobler du på sjefen.
+                    Hvis politiet ikke finner sykkelen innen 24 timer, kobler du på Whee! via Min Side.
                 </p>
             </div>
 
@@ -29,7 +29,7 @@
                 href="/"
                 class="block w-full rounded-lg bg-orange-600 px-6 py-3 text-center font-medium text-white transition-colors hover:bg-orange-700"
             >
-                Tilbake til Min side
+                Tilbake til forsiden
             </a>
         </div>
     </div>

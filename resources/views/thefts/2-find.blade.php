@@ -2,22 +2,27 @@
     <x-slot:heading>
         Sykkeltyveri
     </x-slot:heading>
-    
-    <p>Trinn 2 av 3</p>
-    <h2>2. Sjekk hvor sykkelen  er</h2>
-
-    <a 
-       href="#"
-       class="underline"
-    >
-        Åpne: Hvor er/find my → objekter. 
-    </a>
-
-    <p>Velg Whee! - ditt navn</p>
-    
-
-
-
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <div class="space-y-1 text-center">
+                <p class="text-4xl">📍</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Sjekk hvor sykkelen er</h2>
+                <p class="text-gray-600">Finn posisjonen i Find My.</p>
+            </div>
+            <div class="space-y-3 rounded-lg border-2 border-gray-200 bg-white p-6">
+                <p class="font-medium text-gray-900">Åpne "Hvor er?" / "Find My" appen:</p>
+                <ol class="list-inside list-decimal space-y-1 text-gray-700">
+                    <li>
+                        Velg
+                        <strong>Objekter</strong>
+                    </li>
+                    <li>
+                        Finn
+                        <strong>din sykkel</strong>
+                    </li>
+                    <li>Se om posisjonen vises</li>
+                </ol>
+            </div>
     <!-- Theft form at http://whee-laravel.test/thefts/{id}/2-find  -->
     <form method="POST" action="/thefts/2-find" enctype="multipart/form-data">
         @method('PATCH')
@@ -78,6 +83,7 @@
             -->
         </div>
     </form>
-    
+    </div>
+    </div>
     
 </x-blehout>

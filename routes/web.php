@@ -212,7 +212,7 @@ Route::get('thefts/5-bike-found', function ()
     // if ($theft) {
     //     return view('thefts.5-bike-found');
     // }
-    return view('thefts.5-bike-found');
+    return view('thefts.3-0-found');
 });
 
 Route::patch('thefts/5-bike-found', function ()
@@ -258,53 +258,73 @@ Route::get('/thefts/5-thanks', function ()
 });
 
 
+Route::get('/thefts/funnet', function ()
+{
+    return view('tyveri.3-0-found');
+});
+
+
+
+
+
 // /min-side/tyveri/ flow below
 
 Route::get('/min-side/tyveri/opprett', function ()
 {
-    return view('tyveri.0-create');
+    return view('tyveri.1-0-create');
 });
 
 Route::get('/min-side/tyveri/photos', function ()
 {
-    return view('tyveri.1-edit');
+    return view('tyveri.1-1-edit');
 });
+
+Route::get('/min-side/tyveri/find-my', function ()
+{
+    return view('tyveri.1-2-find');
+});
+
+Route::get('/min-side/tyveri/find-my-help', function ()
+{
+    return view('tyveri.1-2-find-not');
+});
+
 
 // Route::get('/min-side/tyveri/', function ()
 // {
-//     return view('');
+//     return view('tyveri.');
 // });
-
-
 Route::get('/min-side/tyveri/call-police', function ()
 {
-    return view('tyveri.3-callcops');
+    return view('tyveri.1-3-callcops');
 });
 
 
-// 4
+// 2.0
 Route::get('/min-side/tyveri/whee-intro', function ()
 {
-    return view('tyveri');
+    return view('tyveri.');
 });
 
-// Route::get('/min-side/tyveri/', function ()
-// {
-//     return view('');
-// });
 
-// Route::get('/min-side/tyveri/', function ()
-// {
-//     return view('');
-// });
+Route::get('/min-side/tyveri/police-report', function ()
+{
+    return view('tyveri.2-2-police-report');
+});
+
+// Act 3
+Route::get('/min-side/tyveri/funnet', function ()
+{
+    return view('tyveri.3-0-found');
+});
+
+Route::get('/min-side/tyveri/waiting-police', function ()
+{
+    return view('tyveri.3-1-thanks');
+});
 
 // Route::get('', function ()
 // {
 //     return view('');
 // });
 
-
-Route::get('/min-side/tyveri/police-report', function ()
-{
-    return view('tyveri.7-police-report');
-});
