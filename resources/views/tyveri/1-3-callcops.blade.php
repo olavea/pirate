@@ -11,12 +11,12 @@
             </div>
             <div class="space-y-4 rounded-lg border-2 border-gray-200 bg-white p-6">
                 <p class="font-medium text-gray-900">
-                    <a
-                        href="tel:02800"
+                    <a                        
+                        href="tel:1881"
                         class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-2 py-1 text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100"
                     >
                     📞
-                        Ring politiet (02800)
+                        Ring politiet (1881)
                     </a>
                     og si:
                 </p>
@@ -29,7 +29,7 @@
     <form method="POST" action="/thefts/3-callcops" class="space-y-6">
             @csrf
             @method('PATCH')
-            
+            <!-- href="tel:02800" -->
             <div class="flex flex-col gap-3">
                 <a
                     href="/min-side/tyveri/waiting-police"

@@ -294,6 +294,7 @@ Route::get('/min-side/tyveri/find-my-help', function ()
 // {
 //     return view('tyveri.');
 // });
+
 Route::get('/min-side/tyveri/call-police', function ()
 {
     return view('tyveri.1-3-callcops');
@@ -301,11 +302,28 @@ Route::get('/min-side/tyveri/call-police', function ()
 
 
 // 2.0
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('tyveri.');
+// });
+
+
 Route::get('/min-side/tyveri/whee-intro', function ()
 {
-    return view('tyveri.');
+    return view('tyveri.2-0-whee-intro');
 });
 
+
+Route::get('/min-side/tyveri/add-whee', function ()
+{
+    return view('tyveri.2-1-add-whee');
+});
+
+
+Route::get('/min-side/tyveri/whee-report', function ()
+{
+    return view('tyveri.2-1-whee-report');
+});
 
 Route::get('/min-side/tyveri/police-report', function ()
 {
@@ -320,11 +338,31 @@ Route::get('/min-side/tyveri/funnet', function ()
 
 Route::get('/min-side/tyveri/waiting-police', function ()
 {
-    return view('tyveri.3-1-thanks');
+    return view('tyveri.3-1-waiting-police');
 });
+
+
+Route::get('/min-side/tyveri/waiting-whee', function ()
+{
+    return view('tyveri.3-2-waiting-whee');
+});
+
+
+
+
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('tyveri.');
+// });
+
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('tyveri.');
+// });
+
 
 // Route::get('', function ()
 // {
-//     return view('');
+//      return view('');
 // });
 
