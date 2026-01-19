@@ -45,7 +45,7 @@
           Velg sykkellengde og bestill
         </a>
     </div>
-    <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between lg:px-8">
+    <!-- <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between lg:px-8">
       <div class="underline">
         <x-nav href="/sykkel/lengde" :active="request()->is('sykkel/lengde')">🚴‍♀️ Velg sykkellengde og bestill </x-nav>      
       </div>
@@ -54,7 +54,7 @@
 
       <div class="underline">
         <x-nav href="/thefts/create" :active="request()->is('jobs/create')">🕵🏻‍♀️ Hjelp, sykkelen min er stjålet </x-nav>
-      </div>
+      </div> -->
       
       
 
