@@ -257,47 +257,50 @@ Route::get('/thefts/5-thanks', function ()
     return view('thefts.8-thanks');
 });
 
+
 // /min-side/tyveri/ flow below
 
 Route::get('/min-side/tyveri/opprett', function ()
 {
-    return view('tyveri.opprett');
+    return view('tyveri.0-create');
 });
+
+Route::get('/min-side/tyveri/photos', function ()
+{
+    return view('tyveri.1-edit');
+});
+
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('');
+// });
+
 
 Route::get('/min-side/tyveri/call-police', function ()
 {
     return view('tyveri.3-callcops');
 });
 
-Route::get('', function ()
-{
-    return view('');
-});
-
-Route::get('', function ()
-{
-    return view('');
-});
 
 
-Route::get('', function ()
-{
-    return view('');
-});
-Route::get('', function ()
-{
-    return view('');
-});
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('');
+// });
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('');
+// });
 
-Route::get('', function ()
-{
-    return view('');
-});
+// Route::get('/min-side/tyveri/', function ()
+// {
+//     return view('');
+// });
 
-Route::get('', function ()
-{
-    return view('');
-});
+// Route::get('', function ()
+// {
+//     return view('');
+// });
 
 
 Route::get('/min-side/tyveri/police-report', function ()

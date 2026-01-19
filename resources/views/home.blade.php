@@ -14,7 +14,7 @@
     </div>
     <div class="flex flex-col justify-center text-center py-3">
         <a 
-            href="/sykkel/lengde"
+            href="/min-side/tyveri/opprett"
             class="rounded-lg bg-green-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
         >
             Sykkeltyveri og jeg er kunde av Whee!

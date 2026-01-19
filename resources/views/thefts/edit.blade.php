@@ -2,33 +2,42 @@
     <x-slot:heading>
         Sykkeltyveri
     </x-slot:heading>
-
-    <!-- Theft form at http://whee-laravel.test/thefts/{id}/edit  -->
-    <form method="POST" action="/thefts/edit" enctype="multipart/form-data">
-        @method("PATCH")
-        @csrf
-        <div class="space-y-12">    
-            
-            <h2 class="text-lg font-semibold">1. Ta bilder av åstedet</h2>
-
-            <p>Ta bilder av hvor sykkelen sto, rester av lås eller annet som ligger igjen, brutt dørlås eller annet som kan virke relevant.</p>
+    <div class="max-w-4xl space-y-6">
+        <div class="space-y-4">
+            <div class="space-y-1 text-center">
+                <p class="text-4xl">📸</p>
+                <h2 class="text-2xl font-semibold text-gray-900">Ta bilder av åstedet</h2>
+                <p class="text-gray-600">Sikre bevis før de forsvinner.</p>
+            </div>
 
 
 
+            <div class="space-y-3 rounded-lg border-2 border-gray-200 bg-white p-6">
+                <p class="font-medium text-gray-900">Ta bilder av:</p>
+                <ul class="list-inside list-disc space-y-1 text-gray-700">
+                    <li>Stedet hvor sykkelen sto</li>
+                    <li>Ødelagt lås eller låsrest</li>
+                    <li>Annet som kan virke relevant</li>
+                </ul>
+            </div>
 
-            
-            <div>
+            <div class="rounded-lg border-2 border-gray-200 bg-orange-50 p-6">
+                <p class="text-sm font-light text-gray-900">
+                    Ta vare på bildene – de brukes senere når du leverer politianmeldelse.
+                </p>
+            </div>
+
+            <!-- Theft form at http://whee-laravel.test/thefts/{id}/edit  -->
+            <form method="POST" action="/thefts/edit" enctype="multipart/form-data">
+                @method("PATCH")
+                @csrf
                 <!-- <label for="photos">photos</label> -->
-                <br />
                 <input 
                     type="hidden" 
                     id="salary" 
                     name="salary" 
                     value="photos_taken" 
                 />
-                
-            </div>        
-
             <div class="flex flex-col gap-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 
@@ -45,12 +54,7 @@
                     Hopp over
                 </a>
             </div>
-            
-
-            
-            <p>2. Sjekk hvor sykkelen er</p>
-
-            <p>3. Varsle og anmelde</p>
-        </div>    
-    </form>    
+            </form>   
+        </div>
+    </div> 
 </x-blehout>
