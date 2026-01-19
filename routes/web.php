@@ -282,11 +282,12 @@ Route::get('/min-side/tyveri/call-police', function ()
 });
 
 
+// 4
+Route::get('/min-side/tyveri/whee-intro', function ()
+{
+    return view('tyveri');
+});
 
-// Route::get('/min-side/tyveri/', function ()
-// {
-//     return view('');
-// });
 // Route::get('/min-side/tyveri/', function ()
 // {
 //     return view('');
