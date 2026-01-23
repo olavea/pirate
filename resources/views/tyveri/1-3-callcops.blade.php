@@ -24,6 +24,9 @@
                     Jeg er kunde hos Whee! og elsykkelen min verdt mange titusener er stjålet og jeg vet hvor den er,
                     kan dere hjelpe?
                 </p>
+                <p>
+                    {{ $frame }}
+                </p>
             </div>
 
     <form method="POST" action="/thefts/3-callcops" class="space-y-6">

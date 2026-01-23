@@ -21,6 +21,10 @@
                         Gå videre
                     </a>
                 </div>
+                <div class="text-center">
+                    <a href="/" class="text-sm font-medium text-gray-600 transition-colors hover:text-gray-900">Avbryt</a>
+                </div>
+
             </div>
         </div>
     </div>

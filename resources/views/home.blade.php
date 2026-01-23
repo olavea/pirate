@@ -1,26 +1,30 @@
 <x-blehout>
     <x-slot:heading>
-        Min side
+        Test
     </x-slot:heading>
     <div class="max-w-4xl space-y-6">
-        <!-- Welcome Section -->
-        <div class="rounded-lg border-2 border-gray-200 bg-white p-6">
-            <h2 class="mb-4 text-2xl font-semibold text-gray-900">Hei 🖐️</h2>
-            
-                <!-- <section class="space-y-2 space-x-2">
-                    <h3 class="inline-block text-balance text-gray-700">
-                        Vi sees ...
-                    </h3>
-                    <menu class="inline-block text-xs font-thin">
-                        <a
-                            href="#"
-                            class="inline-flex items-center gap-2 rounded-md border-1 border-gray-200 bg-gray-50 p-2 px-2 py-1 text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100"
-                        >
-                            Endre tidspunkt
-                        </a>
-                    </menu>
-                </section> -->
-            
+        <!-- No Welcome Section -->
+        <div class="bg-orange-50 border-orange-300 space-y-4 rounded-lg border-2 p-6">
+        {{-- Header --}}
+            <div class="flex items-start justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Tyveri </h3>
+            </div> 
+
+            <div class="flex flex-wrap gap-3">
+                {{-- Always show "Sykkel funnet!" button for active cases --}}
+                <a
+                    href="/min-side/tyveri/opprett"
+                    class="inline-flex items-center gap-1 rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-orange-700"
+                >
+                    Sykkeltyveri og jeg er kunde av Whee!
+                </a>
+                <a
+                    href="/thefts/funnet"
+                    class="rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-green-800"
+                >
+                    Sykkel funnet!
+                </a>
+            </div>               
         </div>
         <div class="bg-orange-50 border-orange-300 space-y-4 rounded-lg border-2 p-6">
         {{-- Header --}}
@@ -42,9 +46,7 @@
                 >
                     Sykkel funnet!
                 </a>
-            </div>
-
-               
+            </div>               
         </div>    
     <br />
 <!-- 
@@ -64,7 +66,7 @@
             Sykkel funnet
         </a>
     </div> -->
-    <div class="flex flex-col justify-center text-center py-3">
+    <!-- <div class="flex flex-col justify-center text-center py-3">
         <a 
             href="/min-side/tyveri/opprett"
             class="rounded-lg bg-red-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
@@ -79,7 +81,7 @@
         >
             Sykkel funnet
         </a>
-    </div>
+    </div> -->
 
     <div class="flex flex-col justify-center text-center py-3">
         <a 

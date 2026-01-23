@@ -46,7 +46,7 @@
             </form>
             <div class="flex flex-col gap-3">
                 <a
-                    href="/min-side/tyveri/waiting-police"
+                    href="/min-side/tyveri/police-report"
                     class="w-full text-center bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition-colors"
                 >
                     Jeg har lagt til Whee!

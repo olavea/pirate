@@ -41,6 +41,39 @@
                             </button>
                         </li>
                         <li>Kryss av for at anmeldelsen <strong>deles med oss</strong></li>
+                        <li>                            
+                            <button
+                                type="button"
+                                onclick="navigator.clipboard.writeText('825018662').then(() => { const icon = this.querySelector('svg'); icon.classList.add('text-green-600'); setTimeout(() => { icon.classList.remove('text-green-600'); }, 2000); })"
+                                class="inline-flex items-center gap-2 rounded-md border border-gray-200 bg-gray-50 px-2 py-1 font-mono font-semibold text-gray-700 transition-colors hover:border-gray-300 hover:bg-gray-100"
+                            >
+                                📋                                
+                                En 
+                                @if ($bike_type)
+                                    <div class="space-y-4">
+                                        
+                                        {{ $bike_type }} 
+                                   
+                                    </div>
+                                @endif    
+                                
+                                med rammenummer
+                                @if ($frame_number)
+                                    <div class="space-y-4">
+                                        
+                                    {{ $frame_number }} 
+                                   
+                                    </div>
+                                @endif    
+                                @if ($bikes)
+                                    <div>
+                                        @foreach ($bikes as $bike)
+                                        {{ $bike->bike_type }}
+                                        @endforeach
+                                    </div>                              
+                                @endif    
+                            </button>                            
+                        </li>                        
                     </ul>
                 </div>
             </div>

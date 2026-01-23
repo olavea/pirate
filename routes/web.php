@@ -4,8 +4,14 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Route;
 use App\Models\Job;
 
+
+
 Route::get('/', function () {
-    return view('home');
+    $latestActiveTheft = 'yo';
+    return view('home', [
+        'latestActiveTheft' => $latestActiveTheft,
+        'yo' => 'yo',
+    ]);
 });
 
 
@@ -289,15 +295,17 @@ Route::get('/min-side/tyveri/find-my-help', function ()
     return view('tyveri.1-2-find-not');
 });
 
-
 // Route::get('/min-side/tyveri/', function ()
 // {
 //     return view('tyveri.');
 // });
 
+// 303
 Route::get('/min-side/tyveri/call-police', function ()
 {
-    return view('tyveri.1-3-callcops');
+    return view('tyveri.1-3-callcops', [
+        'frame' => 'frame number is much longer than that' 
+    ]);
 });
 
 
@@ -327,7 +335,18 @@ Route::get('/min-side/tyveri/whee-report', function ()
 
 Route::get('/min-side/tyveri/police-report', function ()
 {
-    return view('tyveri.2-2-police-report');
+    $bike = 'HSD Tern';
+    $frame_number = '825018662';
+    $bikes = [
+        "bike_type" => "HSD Tern",
+        "bike_type" => "bleh",
+    ];
+    
+    return view('tyveri.2-2-police-report', [
+        'bikes' => $bikes,
+        'bike_type' => $bike,
+        'frame_number' => $frame_number,
+    ]);
 });
 
 // Act 3
@@ -346,9 +365,6 @@ Route::get('/min-side/tyveri/waiting-whee', function ()
 {
     return view('tyveri.3-2-waiting-whee');
 });
-
-
-
 
 // Route::get('/min-side/tyveri/', function ()
 // {
