@@ -2,8 +2,54 @@
     <x-slot:heading>
         Test
     </x-slot:heading>
-    <br />
+    <div class="max-w-4xl space-y-6">
+        <!-- No Welcome Section -->
+        <div class="bg-orange-50 border-orange-300 space-y-4 rounded-lg border-2 p-6">
+        {{-- Header --}}
+            <div class="flex items-start justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Tyveri </h3>
+            </div> 
 
+            <div class="flex flex-wrap gap-3">
+                {{-- Always show "Sykkel funnet!" button for active cases --}}
+                <a
+                    href="/min-side/tyveri/opprett"
+                    class="inline-flex items-center gap-1 rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-orange-700"
+                >
+                    Sykkeltyveri og jeg er kunde av Whee!
+                </a>
+                <a
+                    href="/thefts/funnet"
+                    class="rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-green-800"
+                >
+                    Sykkel funnet!
+                </a>
+            </div>               
+        </div>
+        <div class="bg-orange-50 border-orange-300 space-y-4 rounded-lg border-2 p-6">
+        {{-- Header --}}
+            <div class="flex items-start justify-between">
+                <h3 class="text-lg font-semibold text-gray-900">Tyveri </h3>
+            </div> 
+
+            <div class="flex flex-wrap gap-3">
+                {{-- Always show "Sykkel funnet!" button for active cases --}}
+                <a
+                    href="/thefts/create"
+                    class="inline-flex items-center gap-1 rounded-lg bg-orange-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-orange-700"
+                >
+                    Hjelp, sykkelen min er stjålet
+                </a>
+                <a
+                    href="/thefts/funnet"
+                    class="rounded-lg bg-green-700 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-green-800"
+                >
+                    Sykkel funnet!
+                </a>
+            </div>               
+        </div>    
+    <br />
+<!-- 
     <div class="flex flex-col justify-center text-center py-3">
         <a 
             href="/thefts/create"
@@ -19,8 +65,8 @@
         >
             Sykkel funnet
         </a>
-    </div>
-    <div class="flex flex-col justify-center text-center py-3">
+    </div> -->
+    <!-- <div class="flex flex-col justify-center text-center py-3">
         <a 
             href="/min-side/tyveri/opprett"
             class="rounded-lg bg-red-600 px-6 py-3 font-medium text-white transition-colors hover:bg-green-700"
@@ -35,7 +81,7 @@
         >
             Sykkel funnet
         </a>
-    </div>
+    </div> -->
 
     <div class="flex flex-col justify-center text-center py-3">
         <a 
@@ -45,6 +91,9 @@
           Velg sykkellengde og bestill
         </a>
     </div>
+
+
+
     <!-- <div class="right-0 mx-auto max-w-7xl  px-4 py-6 sm:px-6 flex justify-between lg:px-8">
       <div class="underline">
         <x-nav href="/sykkel/lengde" :active="request()->is('sykkel/lengde')">🚴‍♀️ Velg sykkellengde og bestill </x-nav>      
@@ -60,5 +109,5 @@
 
 
     </div>
-    
+    </div>
 </x-blehout>

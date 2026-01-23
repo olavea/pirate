@@ -15,22 +15,22 @@
   <!-- Above is base.blade.php in whee-laravel minus lang, csrf token title app.css  -->
   <!-- No changes to nav -->
   <div class="min-h-full">
-    <nav>
-      <div class="mx-auto max-w-7xl px-1 sm:px-2 lg:px-3">
-        <div class="flex h-16 items-center justify-between">
-          <div class="flex items-center">
-            
-            <div class=" md:block">
-              <div class=" flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <x-nav href="/" :active="request()->is('/')">{{ $heading }}</x-nav>
-                
-                
-                
-              </div>
-            </div>
-          </div>
+    <nav class="py-12">
+      <div class="mx-auto flex max-w-4xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center gap-x-4">
+          <a href="/" class="flex items-center gap-x-2 hover:underline">
+            <span class="text-2xl font-bold">Min</span>
+            <x-whee-logo />
+          </a>
+
+          <!-- Page Title -->
+          <div class="flex items-center gap-x-2">
+              <span class="text-gray-500">/</span>
+              <span class="font-medium text-gray-700">{{ $heading }}</span>
+          </div>        
         </div>
+
+        <!-- Profile dropdown -->
       </div>
     </nav>
   
